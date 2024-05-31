@@ -11538,11 +11538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alenushka/Desktop/Examen 2/HarmonyHaven/HarmonyHaven/HarmonyHaven/HarmonyHaven.csproj",
+      "projectUniqueName": "/Users/alenushka/Desktop/Examen 2/HarmonyHaven copy/HarmonyHaven/HarmonyHaven/HarmonyHaven.csproj",
       "projectName": "HarmonyHaven",
-      "projectPath": "/Users/alenushka/Desktop/Examen 2/HarmonyHaven/HarmonyHaven/HarmonyHaven/HarmonyHaven.csproj",
+      "projectPath": "/Users/alenushka/Desktop/Examen 2/HarmonyHaven copy/HarmonyHaven/HarmonyHaven/HarmonyHaven.csproj",
       "packagesPath": "/Users/alenushka/.nuget/packages/",
-      "outputPath": "/Users/alenushka/Desktop/Examen 2/HarmonyHaven/HarmonyHaven/HarmonyHaven/obj/",
+      "outputPath": "/Users/alenushka/Desktop/Examen 2/HarmonyHaven copy/HarmonyHaven/HarmonyHaven/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/alenushka/.nuget/NuGet/NuGet.Config"

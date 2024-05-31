@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "88RWGObaF2BeO6wzreViqQxrlk5sNqLf2Hl7thkmfuNpqHMxBl7WZp0YQ57Bw40ZX43ZqfJoB4guz4mtg5PK0w==",
+  "dgSpecHash": "LOnXJIPMhnMjypqqR85KSnqNuaJTP7elxK0zy0xtwALdvBz48lXGTttmr9tNguE+KDETgGdwrFtRpftx0pEA0w==",
   "success": true,
-  "projectFilePath": "/Users/alenushka/Desktop/Examen 2/HarmonyHaven/HarmonyHaven/HarmonyHaven/HarmonyHaven.csproj",
+  "projectFilePath": "/Users/alenushka/Desktop/Examen 2/HarmonyHaven copy/HarmonyHaven/HarmonyHaven/HarmonyHaven.csproj",
   "expectedPackageFiles": [
     "/Users/alenushka/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/alenushka/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
