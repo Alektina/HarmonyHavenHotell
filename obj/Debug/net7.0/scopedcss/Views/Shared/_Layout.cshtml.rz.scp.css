@@ -1,0 +1,345 @@
+/*Responsive navbar*/
+
+.sidebar-home[b-46yp7msrf4] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: rgb(174 150 135 / 63%);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+
+/*Navbar*/
+#navbar[b-46yp7msrf4] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding-left: 100px;
+    z-index: 999;
+    transition: background-color 0.3s; 
+}
+
+    #navbar .topnav ul[b-46yp7msrf4] {
+        margin: 0;
+        padding: 0;
+    }
+
+    #navbar .topnav li[b-46yp7msrf4] {
+        display: inline; /* Visa listan som en rad */
+    }
+
+        #navbar .topnav li a[b-46yp7msrf4] {
+            align-items: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            padding: 14px 16px;
+            line-height: 3;
+        }
+
+            #navbar .topnav li a:hover[b-46yp7msrf4] {
+                color: #ddd;
+            }
+
+            #navbar .topnav li a.active[b-46yp7msrf4] {
+                color: #ddd;
+                font-size: 20px;
+            }
+
+.sidebar-home li[b-46yp7msrf4] {
+    width: 100%;
+}
+
+.sidebar-home a[b-46yp7msrf4] {
+    width: 100%;
+}
+
+
+.logo img[b-46yp7msrf4] {
+    width: 100px; /* Ändra loggans bredd efter behov */
+    height: auto; /* Låt höjden anpassas proportionellt */
+    margin-right: 100px;
+    margin-top: 10px;
+    display: block; /* Gör loggan till en blocknivåelement för korrekt placering */
+}
+
+.menu-button-nav[b-46yp7msrf4] {
+    display: none !important;
+}
+
+
+
+
+/* Logo */
+/*.logo {
+    flex: 0 0 auto; 
+    margin: 0 auto;
+    position: relative;
+    left: -11%;
+    align-content: center;
+}
+.topnav-right {
+    float: right;
+}*/
+/*Social media*/
+.social-icons[b-46yp7msrf4] {
+    list-style: none;
+    margin-right: 32px;
+}
+
+ul.social-icons[b-46yp7msrf4] {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+}
+
+    /* Styling för varje ikon */
+    ul.social-icons li[b-46yp7msrf4] {
+        margin: 0 5px; 
+    }
+
+        /* Styling för ikonlänkar */
+        ul.social-icons li a[b-46yp7msrf4] {
+            display: inline-block; 
+           
+        }
+
+            /* Styling för ikonbilder */
+            ul.social-icons li a img[b-46yp7msrf4] {
+                width: 20px; 
+                height: auto; 
+            }
+
+h3.follow[b-46yp7msrf4] {
+    
+    padding-top: 20px;
+    padding-bottom: 0px !important;
+}
+
+
+
+
+/*section9*/
+.section9[b-46yp7msrf4] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    position: relative;
+    overflow: visible;
+}
+
+.insta[b-46yp7msrf4] {
+    color: #1e1c1a;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    margin-bottom: 10px !important;
+}
+
+.dot_icon[b-46yp7msrf4] {
+    margin-bottom: 10px !important;
+}
+
+.join_insta[b-46yp7msrf4] {
+    color: #1e1c1a;
+    text-align: center;
+    font-family: 'Gilda Display', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 10px !important;
+}
+
+.insta_at[b-46yp7msrf4] {
+    color: #1e1c1a;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    margin-bottom: 10px !important;
+}
+
+.insta_gallery_img1[b-46yp7msrf4] {
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    z-index: 1;
+    width: 175px;
+}
+
+.insta_gallery_img2[b-46yp7msrf4] {
+    top: 11%;
+    position: absolute;
+    left: 20%;
+    width: 130px;
+}
+
+.insta_gallery_img3[b-46yp7msrf4] {
+    position: absolute;
+    left: 33%;
+    top: 73%;
+    width: 160px;
+}
+
+.insta_gallery_img4[b-46yp7msrf4] {
+    position: absolute;
+    top: -10%;
+    right: 15%;
+    z-index: 13;
+    width: 270px;
+}
+
+.insta_gallery_img5[b-46yp7msrf4] {
+    position: absolute;
+    top: 22%;
+    right: 14%;
+    z-index: 14;
+    width: 100px;
+}
+
+.insta_gallery_img6[b-46yp7msrf4] {
+    position: absolute;
+    right: 30%;
+    width: 150px;
+}
+
+.parallax-img[b-46yp7msrf4] {
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+    animation-fill-mode: none !important;
+}
+
+/*Footer*/
+
+footer[b-46yp7msrf4] {
+    background-color: #333;
+    color: #fff;
+    padding: 57px 0; /* höjden på foten */
+    text-align: center;
+    font-family: "Jost", sans-serif;
+}
+
+.footer-container[b-46yp7msrf4] {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.column[b-46yp7msrf4] {
+    flex: 1;
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+}
+
+    .column:last-child[b-46yp7msrf4] {
+        border-right: none;
+    }
+
+    .column h3[b-46yp7msrf4] {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+footer h4[b-46yp7msrf4] {
+    font-size: 14px;
+    padding-top: 25px;
+}
+    .column ul[b-46yp7msrf4] {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .column ul li[b-46yp7msrf4] {
+            margin-bottom: 5px;
+        }
+
+            .column ul li a[b-46yp7msrf4] {
+                color: #fff;
+                text-decoration: none;
+            }
+
+                .column ul li a:hover[b-46yp7msrf4] {
+                    text-decoration: underline;
+                }
+
+.subscribe[b-46yp7msrf4] {
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+    .subscribe input[type="email"][b-46yp7msrf4] {
+        padding: 6px;
+        width: 250px;
+        margin-right: 10px;
+    }
+
+    .subscribe button[b-46yp7msrf4] {
+        padding: 20px 20px; /*plats för pilen */
+        margin-left: -10px;
+        background-color: #fff;
+        color: #333;
+        border: none;
+        cursor: pointer;
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20"%3E%3Cpath d="M20 0H0v20h20zM7.658 15.707l-1.414-1.414L10.537 10 6.244 5.707l1.414-1.414L13.365 10z"%3E%3C/path%3E%3C/svg%3E'); /* Använd SVG som bakgrundsbild */
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 40px 40px; /* storleken på bakgrundsbilden */
+    }
+
+        .subscribe button:hover[b-46yp7msrf4] {
+            background-color: #ddd;
+        }
+
+        .apart[b-46yp7msrf4] {
+            padding: 40px;
+        }
+
+        .logo_footer[b-46yp7msrf4] {
+            padding-top:28px;
+        }
+
+
+
+
+
+@media(max-width: 800px) {
+    .hideOnMobile[b-46yp7msrf4] {
+        display: none !important;
+    }
+
+    .logo[b-46yp7msrf4] {
+        justify-content: center;
+        position: relative;
+        align-content: center;
+    }
+
+    .menu-button-nav[b-46yp7msrf4] {
+        display: block !important;
+    }
+}
+
+
+@media(max-width: 400px) {
+    .sidebar-home[b-46yp7msrf4] {
+        width: 100% !important;
+    }
+}
+

@@ -1,0 +1,223 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HarmonyHaven</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/animation.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HarmonyHaven.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/mystyle.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <nav id="navbar">
+
+        <div class="topnav">
+            <ul class="sidebar-home">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg></a></li>
+
+                <li><a href="https://localhost:7257/" class="@((Context.Request.Path == "/") ? "active" : "")">HOME</a></li>
+                <li><a href="https://localhost:7257/Rooms/Index" class="@((Context.Request.Path.StartsWithSegments("/Rooms")) ? "active" : "")">LUXURY STAY</a></li>
+                <li><a href="https://localhost:7257/Dines/Index" class="@((Context.Request.Path.StartsWithSegments("/Dines")) ? "active" : "")">DINING</a></li>
+                <li><a href="https://localhost:7257/Products/Index" class="@((Context.Request.Path.StartsWithSegments("/Products")) ? "active" : "")">SHOPPING</a></liclass="hideOnMobile">
+                <li><a href="https://localhost:7257/Retreats/Index" class="@((Context.Request.Path.StartsWithSegments("/Retreats")) ? "active" : "")">RETREAT</a></li>
+                <li><a href="https://localhost:7257/Home/Contact" class="@((Context.Request.Path.StartsWithSegments("/Home")) ? "active" : "")">CONTACT US</a></li>
+            </ul>
+
+            <ul>
+                <li class="menu-button-nav" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a></li>
+
+                <li class="hideOnMobile"><a href="https://localhost:7257/" class="@((Context.Request.Path == "/") ? "active" : "")">HOME</a></li>
+                <li class="hideOnMobile"><a href="https://localhost:7257/Rooms/Index" class="@((Context.Request.Path.StartsWithSegments("/Rooms")) ? "active" : "")">LUXURY STAY</a></li>
+                <li class="hideOnMobile"><a href="https://localhost:7257/Dines/Index" class="@((Context.Request.Path.StartsWithSegments("/Dines")) ? "active" : "")">DINING</a></li>
+                <li class="hideOnMobile"><a href="https://localhost:7257/Products/Index" class="@((Context.Request.Path.StartsWithSegments("/Products")) ? "active" : "")">SHOPPING</a></li>
+                <li class="hideOnMobile"><a href="https://localhost:7257/Retreats/Index" class="@((Context.Request.Path.StartsWithSegments("/Retreats")) ? "active" : "")">RETREAT</a></li>
+                <li class="hideOnMobile"><a href="https://localhost:7257/Home/Contact" class="@((Context.Request.Path.StartsWithSegments("/Home")) ? "active" : "")">CONTACT US</a></li>
+
+            </ul>
+        </div>
+
+        <div class="logo">
+
+            <a asp-area="" asp-controller="Home" asp-action="Index"><img src="https://demo.justvalue.se/cal/wp-content/uploads/2024/05/Logo.png" width="25%" /></a>
+        </div>
+
+    </nav>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script>//NAVBAR
+        $(document).ready(function () {
+            var prevScrollpos = window.pageYOffset;
+            var navbar = document.getElementById("navbar");
+
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    navbar.style.top = "0";
+                } else {
+                    navbar.style.top = "-" + navbar.offsetHeight + "px";
+                }
+                prevScrollpos = currentScrollPos;
+
+                // Lägg till gradient beroende på scrollposition
+                if (window.pageYOffset > 0) {
+                    navbar.style.background = 'linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3))';
+                } else {
+                    navbar.style.background = 'none';
+                }
+            }
+        });
+
+
+        //Sidebar-home
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar-home')
+            sidebar.style.display = 'flex'
+
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar-home')
+            sidebar.style.display = 'none'
+        }
+
+
+
+    </script>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+    <div class="section section9" id="section9">
+
+        <style>
+        </style>
+
+        <p class="insta">INSTAGRAM</p>
+
+        <svg class="dot_icon" xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+            <circle cx="2" cy="2" r="1.5" stroke="#1E1C1A" />
+        </svg>
+
+        <p class="join_insta">JOIN US ON INSTAGRAM<br>AND EXPLORE OUR SANCTUARY</p>
+
+        <p class="insta_at">InSTASIDA</p>
+        <ul class="social-icons">
+            <li>
+                <a href="https://instagram.com/grandhotelstockholm" target="_blank" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 24 24" style="fill:#1A1A1A;">
+                        <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+        <div class="all_imgs">
+            <img decoding="async" src="https://demo.justvalue.se/cal/wp-content/uploads/2024/03/Terrace-1st-Floor-by-Pernilla-Danielsson-3.png" alt="" class="insta_gallery_img1 parallax-img animated fadeInUp">
+            <img decoding="async" src="https://demo.justvalue.se/cal/wp-content/uploads/2024/03/0L5A7249-3.png" alt="" class="insta_gallery_img2 parallax-img animated fadeInUp">
+            <img decoding="async" src="https://demo.justvalue.se/cal/wp-content/uploads/2024/03/0L5A4536-4.png" alt="" class="insta_gallery_img3 parallax-img animated fadeInUp">
+            <img decoding="async" src="https://demo.justvalue.se/cal/wp-content/uploads/2024/03/0L5A7141-2-1.png" alt="" class="insta_gallery_img4 parallax-img animated fadeInUp">
+            <img decoding="async" src="https://demo.justvalue.se/cal/wp-content/uploads/2024/03/0L5A7024-3.png" alt="" class="insta_gallery_img5 parallax-img animated fadeInUp">
+            <img decoding="async" src="https://demo.justvalue.se/cal/wp-content/uploads/2024/03/DSCF6525-2.png" alt="" class="insta_gallery_img6 parallax-img animated fadeInUp">
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="column">
+                <h3>EXPLORE</h3>
+                <ul>
+                    <li><a href="https://localhost:7257/Rooms/Index">Rooms</a></li>
+                    <li><a href="https://localhost:7257/Retreats/Index">Retreat</a></li>
+                    <li><a href="https://localhost:7257/Retreats/Index">SPA & Yoga</a></li>
+                    <li><a href="https://localhost:7257/Dines/Index">Restaurant</a></li>
+                    <li><a href="https://localhost:7257/Products/Index">Shopping</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>CONNECT</h3>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <h4>SIGN UP FOR LATEST <br /> NEWS AND OFFERS</h4>
+                <div class="subscribe">
+                    <input type="email" placeholder="Enter your email">
+                    <button></button>
+                </div>
+            </div>
+            <div class="column">
+                <h3>DISCOVER</h3>
+                <ul>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">News</a></li>
+
+                </ul>
+                <h3 class="follow">FOLLOW US</h3>
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://instagram.com/grandhotelstockholm" target="_blank" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="50" viewBox="0,0,300,150"
+                                 style="fill:#FFFFFF;">
+                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M8,3c-2.757,0 -5,2.243 -5,5v8c0,2.757 2.243,5 5,5h8c2.757,0 5,-2.243 5,-5v-8c0,-2.757 -2.243,-5 -5,-5zM8,5h8c1.654,0 3,1.346 3,3v8c0,1.654 -1.346,3 -3,3h-8c-1.654,0 -3,-1.346 -3,-3v-8c0,-1.654 1.346,-3 3,-3zM17,6c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM12,7c-2.757,0 -5,2.243 -5,5c0,2.757 2.243,5 5,5c2.757,0 5,-2.243 5,-5c0,-2.757 -2.243,-5 -5,-5zM12,9c1.654,0 3,1.346 3,3c0,1.654 -1.346,3 -3,3c-1.654,0 -3,-1.346 -3,-3c0,-1.654 1.346,-3 3,-3z"></path></g></g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/grandhotelsthlm" target="_blank" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="50" viewBox="0,0,300,150"
+                                 style="fill:#FFFFFF;">
+                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,4c0,0 -6.25445,-0.00003 -7.81445,0.41797c-0.861,0.23 -1.53758,0.90758 -1.76758,1.76758c-0.418,1.56 -0.41797,5.81445 -0.41797,5.81445c0,0 -0.00003,4.25445 0.41797,5.81445c0.23,0.861 0.90758,1.53758 1.76758,1.76758c1.56,0.418 7.81445,0.41797 7.81445,0.41797c0,0 6.25445,0.00003 7.81445,-0.41797c0.86,-0.23 1.53758,-0.90758 1.76758,-1.76758c0.418,-1.56 0.41797,-5.81445 0.41797,-5.81445c0,0 0.00003,-4.25445 -0.41797,-5.81445c-0.23,-0.86 -0.90758,-1.53758 -1.76758,-1.76758c-1.56,-0.418 -7.81445,-0.41797 -7.81445,-0.41797zM12,6c2.882,0 6.49087,0.13361 7.29688,0.34961c0.169,0.045 0.30752,0.18352 0.35352,0.35352c0.241,0.898 0.34961,3.63888 0.34961,5.29688c0,1.658 -0.10861,4.39787 -0.34961,5.29688c-0.045,0.169 -0.18352,0.30752 -0.35352,0.35352c-0.805,0.216 -4.41488,0.34961 -7.29687,0.34961c-2.881,0 -6.48987,-0.13361 -7.29687,-0.34961c-0.169,-0.045 -0.30752,-0.18352 -0.35352,-0.35352c-0.241,-0.898 -0.34961,-3.63888 -0.34961,-5.29687c0,-1.658 0.10861,-4.39883 0.34961,-5.29883c0.045,-0.168 0.18352,-0.30656 0.35352,-0.35156c0.805,-0.216 4.41488,-0.34961 7.29688,-0.34961zM10,8.53516v6.92969l6,-3.46484z"></path></g></g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/GrandHotelStockholm" target="_blank" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="50" viewBox="0,0,300,150"
+                                 style="fill:#FFFFFF;">
+                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M5,3c-1.103,0 -2,0.897 -2,2v14c0,1.103 0.897,2 2,2h6.62109h2.79297h4.58594c1.103,0 2,-0.897 2,-2v-14c0,-1.103 -0.897,-2 -2,-2zM5,5h14l0.00195,14h-4.58789v-3.96484h2.36524l0.35156,-2.72461h-2.70117v-1.73633c0,-0.788 0.21961,-1.32031 1.34961,-1.32031h1.42773v-2.43164c-0.695,-0.071 -1.3928,-0.10552 -2.0918,-0.10352c-2.074,0 -3.49414,1.26584 -3.49414,3.58984v2.00586h-2.34375v2.72461h2.34375v3.96094h-6.62109z"></path></g></g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://play.spotify.com/user/11132781853" target="_blank" aria-label="Spotify">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="50" viewBox="0,0,300,150"
+                                 style="fill:#FFFFFF;">
+                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25.009,1.982c-12.687,0 -23.009,10.322 -23.009,23.009c0,12.687 10.322,23.009 23.009,23.009c12.687,0 23.009,-10.321 23.009,-23.009c0,-12.688 -10.322,-23.009 -23.009,-23.009zM34.748,35.333c-0.289,0.434 -0.765,0.668 -1.25,0.668c-0.286,0 -0.575,-0.081 -0.831,-0.252c-2.473,-1.649 -6.667,-2.749 -10.167,-2.748c-3.714,0.002 -6.498,0.914 -6.526,0.923c-0.784,0.266 -1.635,-0.162 -1.897,-0.948c-0.262,-0.786 0.163,-1.636 0.949,-1.897c0.132,-0.044 3.279,-1.075 7.474,-1.077c3.5,-0.002 8.368,0.942 11.832,3.251c0.69,0.46 0.876,1.391 0.416,2.08zM37.74,29.193c-0.325,0.522 -0.886,0.809 -1.459,0.809c-0.31,0 -0.624,-0.083 -0.906,-0.26c-4.484,-2.794 -9.092,-3.385 -13.062,-3.35c-4.482,0.04 -8.066,0.895 -8.127,0.913c-0.907,0.258 -1.861,-0.272 -2.12,-1.183c-0.259,-0.913 0.272,-1.862 1.184,-2.12c0.277,-0.079 3.854,-0.959 8.751,-1c4.465,-0.037 10.029,0.61 15.191,3.826c0.803,0.5 1.05,1.56 0.548,2.365zM40.725,22.013c-0.373,0.634 -1.041,0.987 -1.727,0.987c-0.344,0 -0.692,-0.089 -1.011,-0.275c-5.226,-3.068 -11.58,-3.719 -15.99,-3.725c-0.021,0 -0.042,0 -0.063,0c-5.333,0 -9.44,0.938 -9.481,0.948c-1.078,0.247 -2.151,-0.419 -2.401,-1.495c-0.25,-1.075 0.417,-2.149 1.492,-2.4c0.185,-0.043 4.573,-1.053 10.39,-1.053c0.023,0 0.046,0 0.069,0c4.905,0.007 12.011,0.753 18.01,4.275c0.952,0.56 1.271,1.786 0.712,2.738z"></path></g></g>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="logo_footer">
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="/Images/Logo.png" width="15%" /></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="apart"></div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/script2.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

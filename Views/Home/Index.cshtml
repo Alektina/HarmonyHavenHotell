@@ -1,0 +1,748 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="section section2">
+    <div id="hero">
+
+
+        @*////////*@
+        <div class="sectionwithshadow">
+            <div class="centertitile">
+
+
+                <h2 class="hero-slogan">
+                    <p class="animated fadeInTopLeft slow delay-200ms text-shadow">Discover <span class="gold">Harmony,</span></p>
+                    <p class="animated fadeInRight slow delay-200ms text-shadow">Find <span class="gold">Haven</span></p>
+                </h2>
+
+
+            </div>
+            <div class="bockbockblack animated fadeIn slow delay-200ms">
+
+                <div class="booknowbox">
+                    <div class="dropbox_container_start">
+                        <div class="arrival_dropbox dropdown_box">
+                            <span>
+                                <svg width="50" height="7" viewBox="0 0 50 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.176 4.32L1.416 3.68H3.896L4.136 4.32H1.176ZM2.64 1.664L1.696 3.888L1.632 4.032L0.8 6H0.04L2.64 0.12L5.24 6H4.48L3.664 4.08L3.6 3.92L2.64 1.664ZM8.52125 3.24H9.28125L11.2812 6H10.4413L8.52125 3.24ZM7.52125 0.4H8.20125V6H7.52125V0.4ZM7.89725 1V0.4H9.04125C9.40392 0.4 9.72658 0.469333 10.0093 0.608C10.2973 0.741333 10.5239 0.933333 10.6892 1.184C10.8599 1.43467 10.9453 1.73333 10.9453 2.08C10.9453 2.42133 10.8599 2.72 10.6892 2.976C10.5239 3.22667 10.2973 3.42133 10.0093 3.56C9.72658 3.69333 9.40392 3.76 9.04125 3.76H7.89725V3.16H9.04125C9.28125 3.16 9.49192 3.11733 9.67325 3.032C9.85992 2.94667 10.0039 2.824 10.1053 2.664C10.2119 2.504 10.2652 2.30933 10.2652 2.08C10.2652 1.85067 10.2119 1.656 10.1053 1.496C10.0039 1.336 9.85992 1.21333 9.67325 1.128C9.49192 1.04267 9.28125 1 9.04125 1H7.89725ZM14.5978 3.24H15.3578L17.3578 6H16.5178L14.5978 3.24ZM13.5978 0.4H14.2778V6H13.5978V0.4ZM13.9738 1V0.4H15.1178C15.4805 0.4 15.8031 0.469333 16.0858 0.608C16.3738 0.741333 16.6005 0.933333 16.7658 1.184C16.9365 1.43467 17.0218 1.73333 17.0218 2.08C17.0218 2.42133 16.9365 2.72 16.7658 2.976C16.6005 3.22667 16.3738 3.42133 16.0858 3.56C15.8031 3.69333 15.4805 3.76 15.1178 3.76H13.9738V3.16H15.1178C15.3578 3.16 15.5685 3.11733 15.7498 3.032C15.9365 2.94667 16.0805 2.824 16.1818 2.664C16.2885 2.504 16.3418 2.30933 16.3418 2.08C16.3418 1.85067 16.2885 1.656 16.1818 1.496C16.0805 1.336 15.9365 1.21333 15.7498 1.128C15.5685 1.04267 15.3578 1 15.1178 1H13.9738ZM19.6744 0.4H20.3544V6H19.6744V0.4ZM25.2353 4.736L27.0753 0.4H27.8353L25.2353 6.28L22.6353 0.4H23.3953L25.2353 4.736ZM29.8557 4.32L30.0957 3.68H32.5757L32.8157 4.32H29.8557ZM31.3197 1.664L30.3757 3.888L30.3117 4.032L29.4797 6H28.7197L31.3197 0.12L33.9197 6H33.1597L32.3437 4.08L32.2797 3.92L31.3197 1.664ZM36.2009 0.4H36.8809V5.36H39.0809V6H36.2009V0.4Z" fill="#EEE9E2" />
+                                    <path d="M47.5 5L45.3349 2L49.6651 2L47.5 5Z" fill="#EEE9E2" />
+                                </svg>
+                            </span>
+                            <div class="dropdown">
+                                <button id="arrivalDropbtn" class="dropbtn">Tue Feb 06 2024</button>
+                                <div class="dropdown-content" id="arrivalDateDropdown">
+                                    <!-- JavaScript will populate this with dates -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departure_dropbox dropdown_box">
+                            <span>
+                                <svg width="65" height="7" viewBox="0 0 65 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.824376 0.4H1.50438V6H0.824376V0.4ZM2.50438 6H1.20038V5.32H2.50438C2.81904 5.32 3.10704 5.272 3.36838 5.176C3.62971 5.07467 3.85371 4.93333 4.04038 4.752C4.22704 4.56533 4.37104 4.34133 4.47238 4.08C4.57371 3.81867 4.62438 3.52533 4.62438 3.2C4.62438 2.87467 4.57371 2.58133 4.47238 2.32C4.37104 2.05867 4.22704 1.83733 4.04038 1.656C3.85371 1.46933 3.62971 1.328 3.36838 1.232C3.10704 1.13067 2.81904 1.08 2.50438 1.08H1.20038V0.4H2.50438C3.04838 0.4 3.53104 0.517333 3.95238 0.752C4.37371 0.986666 4.70438 1.31467 4.94438 1.736C5.18438 2.152 5.30438 2.64 5.30438 3.2C5.30438 3.76 5.18438 4.25067 4.94438 4.672C4.70438 5.088 4.37371 5.41333 3.95238 5.648C3.53104 5.88267 3.04838 6 2.50438 6ZM8.23788 6V5.36H11.0619V6H8.23788ZM8.23788 1.04V0.4H11.0619V1.04H8.23788ZM8.23788 3.28V2.64H10.9019V3.28H8.23788ZM7.86188 0.4H8.54188V6H7.86188V0.4ZM13.8603 0.4H14.5403V6H13.8603V0.4ZM14.2363 1.04V0.4H15.3803C15.743 0.4 16.0656 0.469333 16.3483 0.608C16.6363 0.741333 16.863 0.933333 17.0283 1.184C17.199 1.43467 17.2843 1.73333 17.2843 2.08C17.2843 2.42133 17.199 2.72 17.0283 2.976C16.863 3.22667 16.6363 3.42133 16.3483 3.56C16.0656 3.69333 15.743 3.76 15.3803 3.76H14.2363V3.12H15.3803C15.743 3.12 16.0363 3.032 16.2603 2.856C16.4896 2.68 16.6043 2.42133 16.6043 2.08C16.6043 1.73333 16.4896 1.47467 16.2603 1.304C16.0363 1.128 15.743 1.04 15.3803 1.04H14.2363ZM19.8166 4.32L20.0566 3.68H22.5366L22.7766 4.32H19.8166ZM21.2806 1.664L20.3366 3.888L20.2726 4.032L19.4406 6H18.6806L21.2806 0.12L23.8806 6H23.1206L22.3046 4.08L22.2406 3.92L21.2806 1.664ZM27.1619 3.24H27.9219L29.9219 6H29.0819L27.1619 3.24ZM26.1619 0.4H26.8419V6H26.1619V0.4ZM26.5379 1V0.4H27.6819C28.0445 0.4 28.3672 0.469333 28.6499 0.608C28.9379 0.741333 29.1645 0.933333 29.3299 1.184C29.5005 1.43467 29.5859 1.73333 29.5859 2.08C29.5859 2.42133 29.5005 2.72 29.3299 2.976C29.1645 3.22667 28.9379 3.42133 28.6499 3.56C28.3672 3.69333 28.0445 3.76 27.6819 3.76H26.5379V3.16H27.6819C27.9219 3.16 28.1325 3.11733 28.3139 3.032C28.5005 2.94667 28.6445 2.824 28.7459 2.664C28.8525 2.504 28.9059 2.30933 28.9059 2.08C28.9059 1.85067 28.8525 1.656 28.7459 1.496C28.6445 1.336 28.5005 1.21333 28.3139 1.128C28.1325 1.04267 27.9219 1 27.6819 1H26.5379ZM31.6784 1.04V0.4H35.2384V1.04H33.7984V6H33.1184V1.04H31.6784ZM37.5172 0.4H38.1972V4.16C38.1972 4.544 38.3012 4.85333 38.5092 5.088C38.7172 5.32267 39.0212 5.44 39.4212 5.44C39.8212 5.44 40.1252 5.32267 40.3332 5.088C40.5412 4.85333 40.6452 4.544 40.6452 4.16V0.4H41.3252V4.16C41.3252 4.43733 41.2799 4.69333 41.1892 4.928C41.1039 5.16267 40.9759 5.36533 40.8052 5.536C40.6399 5.70667 40.4399 5.84 40.2052 5.936C39.9705 6.032 39.7092 6.08 39.4212 6.08C39.1332 6.08 38.8719 6.032 38.6372 5.936C38.4025 5.84 38.1999 5.70667 38.0292 5.536C37.8639 5.36533 37.7359 5.16267 37.6452 4.928C37.5599 4.69333 37.5172 4.43733 37.5172 4.16V0.4ZM45.165 3.24H45.925L47.925 6H47.085L45.165 3.24ZM44.165 0.4H44.845V6H44.165V0.4ZM44.541 1V0.4H45.685C46.0477 0.4 46.3703 0.469333 46.653 0.608C46.941 0.741333 47.1677 0.933333 47.333 1.184C47.5037 1.43467 47.589 1.73333 47.589 2.08C47.589 2.42133 47.5037 2.72 47.333 2.976C47.1677 3.22667 46.941 3.42133 46.653 3.56C46.3703 3.69333 46.0477 3.76 45.685 3.76H44.541V3.16H45.685C45.925 3.16 46.1357 3.11733 46.317 3.032C46.5037 2.94667 46.6477 2.824 46.749 2.664C46.8557 2.504 46.909 2.30933 46.909 2.08C46.909 1.85067 46.8557 1.656 46.749 1.496C46.6477 1.336 46.5037 1.21333 46.317 1.128C46.1357 1.04267 45.925 1 45.685 1H44.541ZM50.6176 6V5.36H53.4416V6H50.6176ZM50.6176 1.04V0.4H53.4416V1.04H50.6176ZM50.6176 3.28V2.64H53.2816V3.28H50.6176ZM50.2416 0.4H50.9216V6H50.2416V0.4Z" fill="#EEE9E2" />
+                                    <path d="M62.5 5L60.3349 2L64.6651 2L62.5 5Z" fill="#EEE9E2" />
+                                </svg>
+                            </span>
+                            <div class="dropdown">
+                                <button id="departureDropbtn" class="dropbtn">Tue Feb 06 2024</button>
+                                <div class="dropdown-content" id="departureDateDropdown">
+                                    <!-- JavaScript will populate this with dates -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="guest_dropbox dropdown_box">
+                            <span>
+                                <svg width="41" height="7" viewBox="0 0 41 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.12906 3.8V3.16H5.72906C5.72906 3.54933 5.6704 3.92 5.55306 4.272C5.43573 4.61867 5.2624 4.928 5.03306 5.2C4.80373 5.472 4.52106 5.688 4.18506 5.848C3.8544 6.00267 3.47573 6.08 3.04906 6.08C2.64373 6.08 2.26773 6.01067 1.92106 5.872C1.5744 5.728 1.27306 5.528 1.01706 5.272C0.761063 5.01067 0.561063 4.704 0.417063 4.352C0.278396 4 0.209063 3.616 0.209063 3.2C0.209063 2.784 0.278396 2.4 0.417063 2.048C0.561063 1.696 0.761063 1.392 1.01706 1.136C1.27306 0.874667 1.5744 0.674667 1.92106 0.536C2.26773 0.392 2.64373 0.32 3.04906 0.32C3.39573 0.32 3.71306 0.365333 4.00106 0.456C4.2944 0.546666 4.55573 0.68 4.78506 0.856C5.01973 1.032 5.21706 1.25067 5.37706 1.512L4.89706 1.952C4.72106 1.65333 4.47573 1.42133 4.16106 1.256C3.8464 1.08533 3.47573 1 3.04906 1C2.6544 1 2.29706 1.09333 1.97706 1.28C1.65706 1.46667 1.40106 1.72533 1.20906 2.056C1.0224 2.38133 0.929063 2.76267 0.929063 3.2C0.929063 3.632 1.0224 4.01333 1.20906 4.344C1.40106 4.67467 1.65706 4.93333 1.97706 5.12C2.29706 5.30667 2.6544 5.4 3.04906 5.4C3.3264 5.4 3.5744 5.36 3.79306 5.28C4.01706 5.19467 4.20906 5.07733 4.36906 4.928C4.52906 4.77867 4.65973 4.608 4.76106 4.416C4.86773 4.224 4.94506 4.01867 4.99306 3.8H3.12906ZM8.29219 0.4H8.97219V4.16C8.97219 4.544 9.07619 4.85333 9.28419 5.088C9.49219 5.32267 9.79619 5.44 10.1962 5.44C10.5962 5.44 10.9002 5.32267 11.1082 5.088C11.3162 4.85333 11.4202 4.544 11.4202 4.16V0.4H12.1002V4.16C12.1002 4.43733 12.0549 4.69333 11.9642 4.928C11.8789 5.16267 11.7509 5.36533 11.5802 5.536C11.4149 5.70667 11.2149 5.84 10.9802 5.936C10.7455 6.032 10.4842 6.08 10.1962 6.08C9.90819 6.08 9.64685 6.032 9.41219 5.936C9.17752 5.84 8.97485 5.70667 8.80419 5.536C8.63885 5.36533 8.51085 5.16267 8.42019 4.928C8.33485 4.69333 8.29219 4.43733 8.29219 4.16V0.4ZM15.316 6V5.36H18.14V6H15.316ZM15.316 1.04V0.4H18.14V1.04H15.316ZM15.316 3.28V2.64H17.98V3.28H15.316ZM14.94 0.4H15.62V6H14.94V0.4ZM21.1464 4.304C21.2744 4.528 21.4078 4.72533 21.5464 4.896C21.6904 5.06667 21.8504 5.2 22.0264 5.296C22.2024 5.392 22.4024 5.44 22.6264 5.44C22.9251 5.44 23.1651 5.35733 23.3464 5.192C23.5278 5.02667 23.6184 4.816 23.6184 4.56C23.6184 4.30933 23.5598 4.10933 23.4424 3.96C23.3251 3.81067 23.1704 3.69067 22.9784 3.6C22.7918 3.504 22.5918 3.41867 22.3784 3.344C22.2398 3.296 22.0851 3.23467 21.9144 3.16C21.7438 3.08 21.5811 2.98133 21.4264 2.864C21.2718 2.74133 21.1438 2.592 21.0424 2.416C20.9464 2.24 20.8984 2.024 20.8984 1.768C20.8984 1.49067 20.9678 1.24267 21.1064 1.024C21.2451 0.805333 21.4371 0.634666 21.6824 0.512C21.9278 0.384 22.2078 0.32 22.5224 0.32C22.8264 0.32 23.0904 0.378666 23.3144 0.496C23.5438 0.608 23.7384 0.754666 23.8984 0.936C24.0584 1.112 24.1838 1.29867 24.2744 1.496L23.6904 1.832C23.6211 1.69333 23.5331 1.55733 23.4264 1.424C23.3198 1.29067 23.1891 1.18133 23.0344 1.096C22.8851 1.01067 22.7011 0.968 22.4824 0.968C22.1784 0.968 21.9571 1.04267 21.8184 1.192C21.6798 1.336 21.6104 1.49867 21.6104 1.68C21.6104 1.83467 21.6504 1.97867 21.7304 2.112C21.8104 2.24 21.9438 2.36267 22.1304 2.48C22.3224 2.592 22.5811 2.704 22.9064 2.816C23.0558 2.86933 23.2131 2.93867 23.3784 3.024C23.5438 3.10933 23.6958 3.21867 23.8344 3.352C23.9784 3.48 24.0958 3.63733 24.1864 3.824C24.2771 4.00533 24.3224 4.224 24.3224 4.48C24.3224 4.72533 24.2744 4.94667 24.1784 5.144C24.0878 5.34133 23.9598 5.50933 23.7944 5.648C23.6344 5.78667 23.4504 5.89333 23.2424 5.968C23.0398 6.04267 22.8264 6.08 22.6024 6.08C22.2984 6.08 22.0158 6.016 21.7544 5.888C21.4984 5.75467 21.2718 5.58133 21.0744 5.368C20.8824 5.14933 20.7251 4.91733 20.6024 4.672L21.1464 4.304ZM26.3613 1.04V0.4H29.9213V1.04H28.4813V6H27.8013V1.04H26.3613Z" fill="#EEE9E2" />
+                                    <path d="M38.5 5L36.3349 2L40.6651 2L38.5 5Z" fill="#EEE9E2" />
+                                </svg>
+                            </span>
+                            <div class="dropdown">
+                                <button class="dropbtn_light">01</button>
+                                <div class="dropdown-content dropdown-content-light">
+                                    <p class="levelSelection">01</p>
+                                    <p class="levelSelection">02</p>
+                                    <p class="levelSelection">03</p>
+                                    <p class="levelSelection">04</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="bookbtn_start" type="button" onclick="window.location.href='https://www.bokadirekt.se/'">CHECK AVAILABILITY</button>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+            <script>
+
+              
+                // Booking form
+
+                // JavaScript to populate the dropdown with dates for the next year
+                var arrivalDropdown = document.getElementById('arrivalDateDropdown');
+                var departureDropdown = document.getElementById('departureDateDropdown');
+                var arrivalDropbtn = document.getElementById('arrivalDropbtn');
+                var departureDropbtn = document.getElementById('departureDropbtn');
+                var startDate = new Date();
+                var endDate = new Date();
+                endDate.setDate(startDate.getDate() + 7); // Date range for the next week
+
+                // Function to set the selected date as the button text in the desired format
+                function setDateText(dropbtn, date) {
+                    // Format the date as "DD Month YYYY"
+                    var formattedDate = date.getDate() + ' ' + getMonthName(date.getMonth()) + ' ' + date.getFullYear();
+                    dropbtn.textContent = formattedDate;
+                }
+
+                // Function to get the month name from the month index
+                function getMonthName(monthIndex) {
+                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                    return months[monthIndex];
+                }
+
+                // Function to handle date selection
+                function selectDate(dropbtn, date) {
+                    setDateText(dropbtn, date);
+                }
+
+                function populateDropdown(dropdown, dropbtn) {
+                    var currentDate = new Date(startDate);
+                    while (currentDate <= endDate) {
+                        var option = document.createElement('p');
+                        // Format the date as "DD Month YYYY"
+                        option.textContent = currentDate.getDate() + ' ' + getMonthName(currentDate.getMonth()) + ' ' + currentDate.getFullYear();
+                        option.onclick = function () {
+                            var selectedDate = new Date(this.textContent);
+                            selectDate(dropbtn, selectedDate);
+                        };
+                        dropdown.appendChild(option);
+                        currentDate.setDate(currentDate.getDate() + 1);
+                    }
+                }
+
+                populateDropdown(arrivalDropdown, arrivalDropbtn);
+                populateDropdown(departureDropdown, departureDropbtn);
+
+                // Set initial button text to current day in the desired format
+                setDateText(arrivalDropbtn, startDate);
+                setDateText(departureDropbtn, startDate);
+
+                // JavaScript to handle dropdown functionality
+                document.addEventListener('DOMContentLoaded', function () {
+                    const dropdowns = document.querySelectorAll('.dropdown');
+                    dropdowns.forEach(dropdown => {
+                        const button = dropdown.querySelector('.dropbtn_light');
+                        const menu = dropdown.querySelector('.dropdown-content');
+
+                        menu.addEventListener('click', function (e) {
+                            const selectionClass = e.target.classList[0];
+                            if (selectionClass) {
+                                button.textContent = e.target.textContent;
+                            }
+                        });
+                    });
+                });</script>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="section section3" id="retreatsection3">
+
+    <div class="slider">
+
+        <div class="slider__slides">
+            <div class="slide s--active">
+                <div class="slide__inner">
+                    <div class="slide__content">
+                        <div class="dots_place animated fadeInLeft">
+                            <p class="dotnr">1</p>
+                            <div class="linesilder">
+                                <div class="linesikderfull"></div>
+
+
+                            </div>
+                            <p class="dotnr">3</p>
+                        </div>
+                        <p class="slide__text animated fadeInLeft">DISCOVER</p>
+                        <h2 class="slide__heading animated fadeInLeft slow">
+                            SURROUNDED BY NATURE'S GRAND
+                            BEAUTY, OUR RETREAT INVITES YOU TO UNWIND, RECHARGE, AND REDISCOVER YOURSELF.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide__inner">
+                    <div class="slide__content">
+                        <div class="dots_place">
+                            <p class="dotnr">2</p>
+                            <div class="linesilder">
+                                <div class="linesikderfull" style="width: 40px;"></div>
+                            </div>
+                            <p class="dotnr">3</p>
+                        </div>
+                        <p class="slide__text">DISCOVER</p>
+                        <h2 class="slide__heading">
+                            RECONNECT WITH YOUR INNER SELF AND
+                            REJUVENATE YOUR SENSES WITH OUR HEALTH-ORIENTED
+                            RETREATS AT HARMONY HAVEN.
+
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="slide s--prev">
+                <div class="slide__inner">
+                    <div class="slide__content">
+                        <div class="dots_place">
+                            <p class="dotnr">3</p>
+                            <div class="linesilder">
+                                <div class="linesikderfull" style="width: 100px;"></div>
+                            </div>
+                            <p class="dotnr">3</p>
+                        </div>
+                        <p class="slide__text">DISCOVER</p>
+                        <h2 class="slide__heading">
+                            LEAVE THE STRESSES OF EVERYDAY
+                            LIFE BEHIND AND ESCAPE TO A WORLD OF BLISSFUL
+                            RELAXATION AT HARMONY HAVEN.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slides end -->
+        <div class="slider__control animated fadeInUp">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.782935 8.16429C0.773184 7.75735 1.09507 7.42686 1.5019 7.42611L14.1601 7.40304C14.5669 7.4023 14.9046 7.73159 14.9143 8.13853C14.9241 8.54547 14.6022 8.87596 14.1954 8.8767L1.53721 8.89977C1.13039 8.90052 0.792687 8.57123 0.782935 8.16429Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.86583 13.5568C6.59443 13.8282 6.14961 13.8234 5.87228 13.5461L0.979725 8.65355C0.702399 8.37623 0.69759 7.9314 0.968985 7.66C1.24038 7.38861 1.68521 7.39342 1.96253 7.67075L6.85509 12.5633C7.13241 12.8406 7.13722 13.2855 6.86583 13.5568Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.968985 8.64281C0.697591 8.37142 0.702399 7.92659 0.979725 7.64926L5.87228 2.75671C6.14961 2.47938 6.59443 2.47458 6.86583 2.74597C7.13722 3.01737 7.13241 3.46219 6.85509 3.73952L1.96253 8.63207C1.68521 8.9094 1.24038 8.91421 0.968985 8.64281Z" fill="white" />
+            </svg>
+
+        </div>
+        <div class="slider__control slider__control--right m--right animated fadeInUp">
+            <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2171 5.83571C14.2268 6.24265 13.9049 6.57314 13.4981 6.57388L0.839945 6.59696C0.433121 6.5977 0.0954207 6.26841 0.085669 5.86147C0.0759173 5.45453 0.397808 5.12404 0.804631 5.1233L13.4628 5.10022C13.8696 5.09948 14.2073 5.42877 14.2171 5.83571Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.13417 0.443153C8.40557 0.171758 8.85039 0.176567 9.12772 0.453893L14.0203 5.34645C14.2976 5.62377 14.3024 6.0686 14.031 6.33999C13.7596 6.61139 13.3148 6.60658 13.0375 6.32925L8.14491 1.4367C7.86759 1.15937 7.86278 0.714548 8.13417 0.443153Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.031 5.35719C14.3024 5.62858 14.2976 6.07341 14.0203 6.35073L9.12772 11.2433C8.85039 11.5206 8.40557 11.5254 8.13417 11.254C7.86278 10.9826 7.86759 10.5378 8.14491 10.2605L13.0375 5.36793C13.3148 5.0906 13.7596 5.08579 14.031 5.35719Z" fill="white" />
+            </svg>
+
+        </div>
+    </div>
+    <script>(function () {
+            // Selecting necessary elements
+            var $slides = document.querySelectorAll('.slide'); // All slides
+            var $controls = document.querySelectorAll('.slider__control'); // Control buttons
+            var $linesikderfull = document.querySelectorAll('.linesikderfull'); // Line indicator elements
+            var numOfSlides = $slides.length; // Total number of slides
+            var slidingAT = 1300; // Sliding animation duration
+            var slidingBlocked = false; // Flag to prevent overlapping animations
+
+            // Adding classes and data attributes to slides for identification
+            [].slice.call($slides).forEach(function ($el, index) {
+                var i = index + 1;
+                $el.classList.add('slide-' + i);
+                $el.dataset.slide = i;
+            });
+
+            // Adding event listeners to control buttons
+            [].slice.call($controls).forEach(function ($el) {
+                $el.addEventListener('click', controlClickHandler);
+            });
+
+            // Function to handle control button clicks
+            function controlClickHandler() {
+                // Preventing multiple click events during sliding animation
+                if (slidingBlocked) return;
+                slidingBlocked = true;
+
+                // Determining the direction of slide (left or right)
+                var $control = this;
+                var isRight = $control.classList.contains('m--right');
+
+                // Selecting current active slide and its index
+                var $curActive = document.querySelector('.slide.s--active');
+                var index = +$curActive.dataset.slide;
+
+                // Updating slide index based on the direction
+                (isRight) ? index++ : index--;
+                if (index < 1) index = numOfSlides;
+                if (index > numOfSlides) index = 1;
+
+                // Selecting the next active slide
+                var $newActive = document.querySelector('.slide-' + index);
+
+                // Adding rotation animation class to control button
+                $control.classList.add('a--rotation');
+
+                // Removing active classes from current slide and its previous slide
+                $curActive.classList.remove('s--active', 's--active-prev');
+                document.querySelector('.slide.s--prev').classList.remove('s--prev');
+
+                // Adding active classes to the next slide and its previous slide
+                $newActive.classList.add('s--active');
+                if (!isRight) $newActive.classList.add('s--active-prev');
+                var prevIndex = index - 1;
+                if (prevIndex < 1) prevIndex = numOfSlides;
+                document.querySelector('.slide-' + prevIndex).classList.add('s--prev');
+
+                // Update linesikderfull width based on current slide
+                var linesikderWidth = 100 + 100 * (index - 1);
+                $linesikderfull.forEach(function ($el) {
+                    $el.style.width = linesikderWidth + 'px';
+                });
+
+                // Reset slidingBlocked flag after sliding animation completes
+                setTimeout(function () {
+                    $control.classList.remove('a--rotation');
+                    slidingBlocked = false;
+                }, slidingAT * 0.75);
+            }
+        })();</script>
+</div>
+
+<div class="section section4">
+    <div class="chosen_titles">
+        <div class="chosen_title">
+            <div class="titles_box animated slideInLeft delay-100ms slow"><span class="smallnr">01</span><span class="title">RELAX</span></div>
+            <div class="titles_box animated slideInLeft delay-200ms slow"><span class="smallnr">02</span><span class="title active">STAY</span></div>
+            <div class="titles_box animated slideInLeft delay-300ms slow"><span class="smallnr">03</span><span class="title">RETREAT</span></div>
+            <div class="titles_box animated slideInLeft delay-500ms slow"><span class="smallnr">04</span><span class="title">DINE</span></div>
+        </div>
+    </div>
+
+    <div class="shown_text">
+        <div class="shown">
+            <p class="title_pre">
+                <span class="bignr">01_</span>
+                <span class="smallnr">04</span>
+                RELAX
+            </p>
+            <div class="content_in_show">
+                <p class="text_in_show">Relax, unwind and restore or simply feel beautiful. Book a treatment with one of our highly skilled therapists, who will design each session to your specific needs. We have a wide range of treatments working on different levels, such as “relaxing”, “therapeutic & healing”, “energetic & spiritual”, as well as “beauty” sessions available.</p>
+                <p class="text_in_show_sec">
+                    Our two beautiful treatment rooms and open air space, invite you to let go and deeply relax. We also offer Yoga classes every morning with different teachers, both for beginners and advanced participants.<br><br><br>
+                    <span class="button_in_show">RESERVE A SPA</span>
+                </p>
+            </div>
+        </div>
+        <div class="shown active">
+            <p class="title_pre animated fadeInUp slow">
+                <span class="bignr">02_</span>
+                <span class="smallnr">04</span>
+                STAY
+            </p>
+            <div class="content_in_show">
+                <p class="text_in_show animated fadeInUp slow delay-100ms">People are at the heart-beat of everything we do. For us, holistic living is a lifestyle. Through our retreat offerings we showcase tools for individuals to explore the connection of body, mind and spirit.We embrace lifelong learning, and our intention is not to be everything to everyone, but rather, to offer each individual their own space in which to grow.</p>
+                <p class="text_in_show_sec animated fadeInUp slow delay-200ms">
+                    Harmony Haven a house of friendship- a place for like-minded travellers and locals alike to meet, connect and share experiences. An oasis away from everyday life where you can rejuvenate, grow and reconnect with your true-self. Our aim is to create a magical place, where guests can find inspiration, joy and harmony within.<br><br><br>
+                    <span class="button_in_show">RESERVE A ROOM</span>
+                </p>
+            </div>
+        </div>
+        <div class="shown">
+            <p class="title_pre">
+                <span class="bignr">03_</span>
+                <span class="smallnr">04</span>
+                RETREAT
+            </p>
+            <div class="content_in_show">
+                <p class="text_in_show">Harmony Haven was founded with the purpose of inspiring our guests with an unique and transformative experience. Our different retreats include yoga, meditation and mindfulness workshops, seminars and other holistic wellness related events. The retreats include all aspects of wellbeing; physical, mental, emotional, spiritual and social.</p>
+                <p class="text_in_show_sec">
+                    Most of our retreats are led by renowned international teachers and holistic wellness experts. You can choose a completely personalised wellbeing experience tailored to your individual needs, or you can choose to join one of our upcoming group retreats.<br><br><br>
+                    <span class="button_in_show">RESERVE A RETREAT</span>
+                </p>
+            </div>
+        </div>
+        <div class="shown">
+            <p class="title_pre">
+                <span class="bignr">04_</span>
+                <span class="smallnr">04</span>
+                DINE
+            </p>
+            <div class="content_in_show">
+                <p class="text_in_show">Nourishment is one of the foundational parts of Harmony Haven’s values. Harmony Haven’s consciousness based approach translates into our cuisine which aligns with the principle of “food as a medicine”. We use only fresh, locally-sourced organic ingredients, partly sourced from our kitchen garden. </p>
+                <p class="text_in_show_sec">
+                    Therefore, we can adapt to most of your food wishes, intolerances and allergies. You can also go check out cleanse plant-based menu to support body and mind with detoxification and weight loss during our special retreats. Meaningful exchanges can happen when we come together with an open heart to share a meal.<br><br><br>
+                    <span class="button_in_show">RESERVE A TABLE</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            const titles = document.querySelectorAll('.title');
+            const shownItems = document.querySelectorAll('.shown');
+
+            titles.forEach((title, index) => {
+                title.addEventListener('click', function () {
+                    titles.forEach(t => t.classList.remove('active'));
+                    shownItems.forEach(s => s.classList.remove('active'));
+
+                    title.classList.add('active');
+                    shownItems[index].classList.add('active');
+
+                    shownItems.forEach((item, i) => {
+                        const paragraphs1 = item.querySelector('.text_in_show');
+                        const paragraphs2 = item.querySelector('.text_in_show_sec');
+                        const button = item.querySelector('.button_in_show');
+                        const title_pre = item.querySelector('.title_pre');
+
+                        if (i === index && item.classList.contains('active')) {
+                            paragraphs1.classList.add('animated', 'fadeInUp', 'slow', 'delay-100ms', 'o-anim-ready');
+                            paragraphs2.classList.add('animated', 'fadeInUp', 'slow', 'delay-200ms', 'o-anim-ready');
+                            button.classList.add('animated', 'fadeInUp', 'slow', 'delay-500ms', 'o-anim-ready');
+                            title_pre.classList.add('animated', 'fadeInUp', 'slow', 'delay-500ms', 'o-anim-ready');
+                        } else {
+                            paragraphs1.classList.remove('animated', 'fadeInUp', 'slow', 'delay-100ms', 'o-anim-ready');
+                            paragraphs2.classList.remove('animated', 'fadeInUp', 'slow', 'delay-200ms', 'o-anim-ready');
+                            button.classList.remove('animated', 'fadeInUp', 'slow', 'delay-500ms', 'o-anim-ready');
+                            title_pre.classList.remove('animated', 'fadeInUp', 'slow', 'delay-500ms', 'o-anim-ready');
+                        }
+                    });
+                });
+            });
+        });</script>
+</div>
+<div class="section section5">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <div class="chosen_titles_filter">
+        <div class="filter_title_box animated fadeInDown">
+            <p class="pre_title_filter">
+                GALLERY
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="4" viewBox="0 0 5 4" fill="none">
+                <circle cx="2.44141" cy="2" r="1.5" stroke="#1E1C1A" />
+            </svg>
+            <h2 class="title_filter">PEOPLE ARE AT THE HEARTBEAT OF EVERYTHING WE DO.<br>FOR US, HOLISTIC LIVING IS A LIFESTYLE.</h2>
+        </div>
+        <div class="filter_list">
+            <p class="pre_title_filter">
+                FILTER GALLERY
+            </p>
+            <div class="filter_all_btn">
+                <button class="filter_btn active" data-category="all" type="button">ALL</button>
+                <button class="filter_btn" data-category="rooms" type="button">ROOMS</button>
+                <button class="filter_btn" data-category="spa" type="button">SPA</button>
+                <button class="filter_btn" data-category="restaurant" type="button">RESTAURANT</button>
+                <button class="filter_btn" data-category="yoga" type="button">YOGA</button>
+                <button class="filter_btn" data-category="pool" type="button">POOL AREA</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="image_slide" data-mouse-down-at="0" data-slide-prev-percentage="0" data-slide-percentage="0">
+        <img decoding="async" class="image all rooms" src="/Images/frames1.png" draggable="false">
+        <img decoding="async" class="image all yoga" src="/Images/frames2.png" draggable="false">
+        <img decoding="async" class="image all restaurant" src="/Images/frames3.png" draggable="false">
+        <img decoding="async" class="image all yoga" src="/Images/frames4.png" draggable="false">
+        <img decoding="async" class="image all yoga spa" src="/Images/frames5.png" draggable="false">
+        <img decoding="async" class="image all rooms yoga" src="/Images/frames6.png" draggable="false">
+        <img decoding="async" class="image all rooms spa" src="/Images/frames7.png" draggable="false">
+    </div>
+    <script>const slide = document.getElementById('image_slide');
+        const image = document.getElementsByClassName('image');
+
+        window.onmousedown = e => {
+            slide.dataset.mouseDownAt = e.clientX;
+        }
+
+        window.onmousemove = e => {
+            if (slide.dataset.mouseDownAt === "0") return;
+            const mouseAlpha = parseFloat(slide.dataset.mouseDownAt - e.clientX);
+            const maxAlpha = window.innerWidth / 2;
+
+            var percentage = (mouseAlpha / maxAlpha) * 80; //we need a percentage value to use at our css file.
+            var nextPercentage = parseFloat(slide.dataset.slidePrevPercentage) + percentage;
+            slide.dataset.slidePercentage = nextPercentage;
+
+
+            if (nextPercentage < 0) {
+                nextPercentage = 0;
+                percentage = 0;
+            }
+            if (nextPercentage > 100) {
+                nextPercentage = 100;
+                percentage = 100;
+            }
+            console.log('percentage', percentage);
+            console.log('nextPercentage', nextPercentage);
+
+            //   animate the slide
+            slide.animate({
+                transform: `translate(-${nextPercentage}%, -50%)`
+            }, { duration: 1000, fill: 'forwards' });
+
+            //   the paralax effect for the image:
+            for (let i = 0; i < image.length; i++) {
+                image[i].animate({
+                    objectPosition: `${nextPercentage}% center`
+                }, { duration: 1000, fill: 'forwards' });
+            }
+        }
+        window.onmouseup = () => {
+            slide.dataset.mouseDownAt = "0";
+            slide.dataset.slidePrevPercentage = slide.dataset.slidePercentage;
+        }
+
+        $(document).ready(function () {
+            $(".filter_btn").on("click", function () {
+                var category = $(this).data("category");
+
+                // Show images based on the selected category
+                if (category === "all") {
+                    $(".image").show();
+                } else {
+                    $(".image").hide();
+                    $("." + category).show();
+                }
+
+                // Toggle the "active" class on the clicked button
+                $(".filter_btn").removeClass("active");
+                $(this).addClass("active");
+            });
+        });</script>
+
+</div>
+<div class="section section6">
+
+    <style>
+    </style>
+    <div class="slide_newr">
+
+        <div class="slide_newr__slide_news">
+            <div class="slide_new s-new--active_new">
+                <div class="slide_new__inner">
+                    <div class="slide_new__content">
+                        <div class="dots_new_place">
+                            <p class="dotnr_new">1</p>
+                            <div class="linesilder_new">
+                                <div class="linesikderfull_new"></div>
+                            </div>
+                            <p class="dotnr_new">2</p>
+                        </div>
+                        <p class="slide_new__text animated fadeInLeft slow">MINDFUL</p>
+                        <p class="slide_new__heading animated fadeInRight slow">HEALING</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide_new s-new--prev">
+                <div class="slide_new__inner">
+                    <div class="slide_new__content">
+                        <div class="dots_new_place">
+                            <p class="dotnr_new">2</p>
+                            <div class="linesilder_new">
+                                <div class="linesikderfull_new"></div>
+                            </div>
+                            <p class="dotnr_new">2</p>
+                        </div>
+                        <p class="slide_new__text">TRANQUIL</p>
+                        <p class="slide_new__heading">OASIS</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide_newr__control animated fadeInUp">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.782935 8.16429C0.773184 7.75735 1.09507 7.42686 1.5019 7.42611L14.1601 7.40304C14.5669 7.4023 14.9046 7.73159 14.9143 8.13853C14.9241 8.54547 14.6022 8.87596 14.1954 8.8767L1.53721 8.89977C1.13039 8.90052 0.792687 8.57123 0.782935 8.16429Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.86583 13.5568C6.59443 13.8282 6.14961 13.8234 5.87228 13.5461L0.979725 8.65355C0.702399 8.37623 0.69759 7.9314 0.968985 7.66C1.24038 7.38861 1.68521 7.39342 1.96253 7.67075L6.85509 12.5633C7.13241 12.8406 7.13722 13.2855 6.86583 13.5568Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.968985 8.64281C0.697591 8.37142 0.702399 7.92659 0.979725 7.64926L5.87228 2.75671C6.14961 2.47938 6.59443 2.47458 6.86583 2.74597C7.13722 3.01737 7.13241 3.46219 6.85509 3.73952L1.96253 8.63207C1.68521 8.9094 1.24038 8.91421 0.968985 8.64281Z" fill="white" />
+            </svg>
+
+        </div>
+        <div class="slide_newr__control slide_newr__control--right m--right animated fadeInUp">
+            <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2171 5.83571C14.2268 6.24265 13.9049 6.57314 13.4981 6.57388L0.839945 6.59696C0.433121 6.5977 0.0954207 6.26841 0.085669 5.86147C0.0759173 5.45453 0.397808 5.12404 0.804631 5.1233L13.4628 5.10022C13.8696 5.09948 14.2073 5.42877 14.2171 5.83571Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.13417 0.443153C8.40557 0.171758 8.85039 0.176567 9.12772 0.453893L14.0203 5.34645C14.2976 5.62377 14.3024 6.0686 14.031 6.33999C13.7596 6.61139 13.3148 6.60658 13.0375 6.32925L8.14491 1.4367C7.86759 1.15937 7.86278 0.714548 8.13417 0.443153Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.031 5.35719C14.3024 5.62858 14.2976 6.07341 14.0203 6.35073L9.12772 11.2433C8.85039 11.5206 8.40557 11.5254 8.13417 11.254C7.86278 10.9826 7.86759 10.5378 8.14491 10.2605L13.0375 5.36793C13.3148 5.0906 13.7596 5.08579 14.031 5.35719Z" fill="white" />
+            </svg>
+
+        </div>
+    </div>
+    <script>(function () {
+            var $slide_news = document.querySelectorAll('.slide_new');
+            var $controls = document.querySelectorAll('.slide_newr__control');
+            var $linesikderfull_new = document.querySelectorAll('.linesikderfull_new');
+            var numOfslide_news = $slide_news.length;
+            var slidingAT = 1300;
+            var slidingBlocked = false;
+
+            [].slice.call($slide_news).forEach(function ($el, index) {
+                var i = index + 1;
+                $el.classList.add('slide_new-' + i);
+                $el.dataset.slide_new = i;
+            });
+
+            [].slice.call($controls).forEach(function ($el) {
+                $el.addEventListener('click', controlClickHandler);
+            });
+
+            function controlClickHandler() {
+                if (slidingBlocked) return;
+                slidingBlocked = true;
+
+                var $control = this;
+                var isRight = $control.classList.contains('m--right');
+                var $curactive_new = document.querySelector('.slide_new.s-new--active_new');
+                var index = +$curactive_new.dataset.slide_new;
+
+                (isRight) ? index++ : index--;
+                if (index < 1) index = numOfslide_news;
+                if (index > numOfslide_news) index = 1;
+
+                var $newactive_new = document.querySelector('.slide_new-' + index);
+
+                $control.classList.add('a--rotation');
+
+                $curactive_new.classList.remove('s-new--active_new', 's-new--active_new-prev');
+                document.querySelector('.slide_new.s-new--prev').classList.remove('s-new--prev');
+                $newactive_new.classList.add('s-new--active_new');
+                if (!isRight) $newactive_new.classList.add('s-new--active_new-prev');
+                var prevIndex = index - 1;
+                if (prevIndex < 1) prevIndex = numOfslide_news;
+                document.querySelector('.slide_new-' + prevIndex).classList.add('s-new--prev');
+
+                // Update linesikderfull_new width based on current slide
+                var linesikderfull_new = 100 + 100 * (index - 1);
+                $linesikderfull_new.forEach(function ($el) {
+                    $el.style.width = linesikderfull_new + 'px';
+                });
+
+                setTimeout(function () {
+                    $control.classList.remove('a--rotation');
+                    slidingBlocked = false;
+                }, slidingAT * 0.75);
+            };
+        }());</script>
+
+</div>
+<div class="section section7">
+    <style>
+    </style>
+
+    <p class="pretitle">WORDS FROM THE GUESTS</p>
+
+    <h2 class="guestwords animated fadeInUp slow">
+        “Indulge in the <span class="guestwordsgreen">warmth of a home </span><br><span class="guestwordsgreen">away from home</span> as you immerse yourself<br>in the unparalleled <span class="guestwordsgreen">comfort and </span><br><span class="guestwordsgreen">hospitality of our haven.”</span>
+    </h2>
+
+    <a class="greenbtn animated fadeInUp delay-1s slow" href="https://localhost:7257/Rooms/Index">BOOK NOW</a>
+
+</div>
+
+<div class="section section8">
+
+    <div class="slide_retr">
+
+        <div class="slide_retr__slide_rets">
+            <div class="slide_ret s-ret-active_ret">
+                <div class="slide_ret__inner">
+                    <div class="slide_ret__content">
+                        <div class="dots_rets_place animated fadeInLeft">
+                            <p class="dots_retnr">1</p>
+                            <div class="linesilder_ret">
+                                <div class="linesikderfull_ret"></div>
+                            </div>
+                            <p class="dots_retnr">2</p>
+                        </div>
+                        <p class="slide_ret__text animated fadeInLeft">OUR RETREAT</p>
+                        <p class="slide_ret__heading animated fadeInLeft slow">HARMONY HAVEN OFFERS A SANCTUARY, <br>A DEPARTURE FROM THE <br>ROUTINES OF DAILY LIFE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide_ret s-ret-prev">
+                <div class="slide_ret__inner">
+                    <div class="slide_ret__content">
+                        <div class="dots_rets_place">
+                            <p class="dots_retnr">2</p>
+                            <div class="linesilder_ret">
+                                <div class="linesikderfull_ret"></div>
+                            </div>
+                            <p class="dots_retnr">2</p>
+                        </div>
+                        <p class="slide_ret__text">OUR RETREAT</p>
+                        <p class="slide_ret__heading">
+                            IMMERSE YOURSELF IN A SANCTUARY<br>
+                            DESIGNED FOR WELLNESS AND REJUVENATION AT HARMONY HAVEN.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide_retr__control">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.782935 8.16429C0.773184 7.75735 1.09507 7.42686 1.5019 7.42611L14.1601 7.40304C14.5669 7.4023 14.9046 7.73159 14.9143 8.13853C14.9241 8.54547 14.6022 8.87596 14.1954 8.8767L1.53721 8.89977C1.13039 8.90052 0.792687 8.57123 0.782935 8.16429Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.86583 13.5568C6.59443 13.8282 6.14961 13.8234 5.87228 13.5461L0.979725 8.65355C0.702399 8.37623 0.69759 7.9314 0.968985 7.66C1.24038 7.38861 1.68521 7.39342 1.96253 7.67075L6.85509 12.5633C7.13241 12.8406 7.13722 13.2855 6.86583 13.5568Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.968985 8.64281C0.697591 8.37142 0.702399 7.92659 0.979725 7.64926L5.87228 2.75671C6.14961 2.47938 6.59443 2.47458 6.86583 2.74597C7.13722 3.01737 7.13241 3.46219 6.85509 3.73952L1.96253 8.63207C1.68521 8.9094 1.24038 8.91421 0.968985 8.64281Z" fill="white" />
+            </svg>
+
+        </div>
+        <div class="slide_retr__control slide_retr__control--right m--right">
+            <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2171 5.83571C14.2268 6.24265 13.9049 6.57314 13.4981 6.57388L0.839945 6.59696C0.433121 6.5977 0.0954207 6.26841 0.085669 5.86147C0.0759173 5.45453 0.397808 5.12404 0.804631 5.1233L13.4628 5.10022C13.8696 5.09948 14.2073 5.42877 14.2171 5.83571Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.13417 0.443153C8.40557 0.171758 8.85039 0.176567 9.12772 0.453893L14.0203 5.34645C14.2976 5.62377 14.3024 6.0686 14.031 6.33999C13.7596 6.61139 13.3148 6.60658 13.0375 6.32925L8.14491 1.4367C7.86759 1.15937 7.86278 0.714548 8.13417 0.443153Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.031 5.35719C14.3024 5.62858 14.2976 6.07341 14.0203 6.35073L9.12772 11.2433C8.85039 11.5206 8.40557 11.5254 8.13417 11.254C7.86278 10.9826 7.86759 10.5378 8.14491 10.2605L13.0375 5.36793C13.3148 5.0906 13.7596 5.08579 14.031 5.35719Z" fill="white" />
+            </svg>
+
+        </div>
+    </div>
+    <script>(function () {
+            var $slide_rets = document.querySelectorAll('.slide_ret');
+            var $controls = document.querySelectorAll('.slide_retr__control');
+            var $linesikderfull_ret = document.querySelectorAll('.linesikderfull_ret');
+            var numOfslide_rets = $slide_rets.length;
+            var slidingAT = 1300;
+            var slidingBlocked = false;
+
+            [].slice.call($slide_rets).forEach(function ($el, index) {
+                var i = index + 1;
+                $el.classList.add('slide_ret-' + i);
+                $el.dataset.slide_ret = i;
+            });
+
+            [].slice.call($controls).forEach(function ($el) {
+                $el.addEventListener('click', controlClickHandler);
+            });
+
+            function controlClickHandler() {
+                if (slidingBlocked) return;
+                slidingBlocked = true;
+                var $control = this;
+                var isRight = $control.classList.contains('m--right');
+                var $curactive_ret = document.querySelector('.slide_ret.s-ret-active_ret');
+                var index = +$curactive_ret.dataset.slide_ret;
+
+                (isRight) ? index++ : index--;
+                if (index < 1) index = numOfslide_rets;
+                if (index > numOfslide_rets) index = 1;
+
+                var $newactive_ret = document.querySelector('.slide_ret-' + index);
+                $control.classList.add('a--rotation');
+                $curactive_ret.classList.remove('s-ret-active_ret', 's-ret-active_ret-prev');
+                document.querySelector('.slide_ret.s-ret-prev').classList.remove('s-ret-prev');
+                $newactive_ret.classList.add('s-ret-active_ret');
+                if (!isRight) $newactive_ret.classList.add('s-ret-active_ret-prev');
+                var prevIndex = index - 1;
+                if (prevIndex < 1) prevIndex = numOfslide_rets;
+                document.querySelector('.slide_ret-' + prevIndex).classList.add('s-ret-prev');
+
+                // Update linesikderfullret width based on current slide
+                var linesikderWidth_ret = 100 + 100 * (index - 1);
+                $linesikderfull_ret.forEach(function ($el) {
+                    $el.style.width = linesikderWidth_ret + 'px';
+                });
+
+                setTimeout(function () {
+                    $control.classList.remove('a--rotation');
+                    slidingBlocked = false;
+                }, slidingAT * 0.75);
+            };
+        }());</script>
+
+</div>

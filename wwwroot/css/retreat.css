@@ -1,0 +1,406 @@
+﻿
+
+
+.sectionmini_retreat {
+    max-width: 100% !important;
+    
+    background: #232323;
+    height: 13vh !important;
+}
+
+
+.section4 {
+    background: #EEE9E2;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.title {
+    cursor: pointer;
+    filter: blur(5px);
+    color: #1E1C1A;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    transition: filter 0.5s ease;
+    font-family: 'Gilda Display',serif;
+}
+
+    .title:hover {
+        filter: blur(2px);
+    }
+
+    .title.active {
+        filter: blur(0);
+    }
+
+.chosen_titles {
+    position: relative;
+    top: 20%;
+    left: 10vh;
+    padding-left: 31px;
+}
+
+.chosen_title {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.shown_text {
+    position: relative;
+    top: -8%;
+    left: 50%;
+    width: 45%;
+    margin: 0 !important;
+}
+
+.titles_box {
+    display: flex;
+    align-items: flex-start;
+}
+
+.shown {
+    height: 0;
+    transition: height 0.5s ease;
+    overflow: hidden;
+}
+
+    .shown.active {
+        height: 450px;
+    }
+
+.title_in_show, .title_pre {
+    font-family: 'Gilda Display',serif;
+    color: #1E1C1A;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 25px !important;
+}
+
+.bignr {
+    font-family: 'Gilda Display',serif;
+    color: #818b6e;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.smallnr {
+    font-family: 'Gilda Display',serif;
+    color: #818b6e;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 400;
+    padding-right: 15px;
+}
+
+.titles_box .smallnr {
+    color: #818B6E;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    padding-top: 20px;
+    padding-right: 15px;
+}
+
+.content_in_show {
+    display: grid;
+    align-items: flex-start;
+    gap: 35px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text_in_show, .text_in_show_sec {
+    color: #1E1C1A;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 !important;
+}
+
+.button_in_show {
+    cursor: pointer;
+    border: 1px solid #818B6E;
+    border-radius: 50px;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17.5px;
+    letter-spacing: 1.2px;
+    padding: 10px 20px;
+    background: #818B6E00;
+    transition: background 0.5s ease;
+}
+
+    .button_in_show:hover {
+        background: #818B6E;
+    }
+
+
+
+.section6 {
+    max-width: 100% !important;
+    margin: 0 !important;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.slide_newr {
+    max-width: 100% !important;
+    position: relative;
+    height: 100vh;
+}
+
+.slide_newr__slide_news {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+}
+
+.slide_newr__control {
+    z-index: 2;
+    position: absolute;
+    top: 90%;
+    left: 3.5%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff0;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border: solid white 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide_newr__control--right {
+    left: 7.5%;
+}
+
+.slide_newr__control:hover {
+    background-color: #818B6E;
+}
+
+.slide_new {
+    transition: opacity 2s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.dotnr_new {
+    color: #EEE9E2;
+    font-size: 29px;
+    font-weight: 400;
+    letter-spacing: 5.8px;
+    width: fit-content;
+    font-family: 'Gilda Display',serif;
+    margin: 0 !important;
+}
+
+.dots_new_place {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    bottom: 14%;
+    left: 4%;
+    align-items: center;
+}
+
+.linesilder_new {
+    display: flex;
+    background-color: #EEE9E2;
+    width: 200px;
+    height: 1px;
+    align-items: center;
+    transition: all 1s ease-out;
+}
+
+.linesikderfull_new {
+    height: 4px;
+    width: 66px;
+    background-color: #EEE9E2;
+    transition: all 1s ease-out;
+}
+
+.slide_new.s-new--active_new {
+    opacity: 1;
+    z-index: 1;
+    pointer-events: auto;
+}
+
+.slide_new:nth-child(1) .slide_new__inner {
+    background-image: url('https://demo.justvalue.se/cal/wp-content/uploads/2024/04/Outdoor-Yoga-Shala-by-Maz-Green-1.png');
+}
+
+.slide_new:nth-child(2) .slide_new__inner {
+    background-image: url('https://demo.justvalue.se/cal/wp-content/uploads/2024/04/Meditation-by-Par-Olsson-1.png');
+}
+
+.slide_new:nth-child(3) .slide_new__inner {
+    background-image: url('https://demo.justvalue.se/cal/wp-content/uploads/2024/04/Massage-Detail-1-1.png');
+}
+
+.slide_new__inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100vw;
+    height: 100vh;
+    margin-left: -50vw;
+    margin-top: -50vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+    .slide_new__inner:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+.slide_new__content {
+    position: absolute;
+    height: 100%;
+    color: #EEE9E2;
+    width: 100%;
+    padding: 20px 0px 20px 0;
+}
+
+.slide_new__heading {
+    font-family: 'Gilda Display',serif;
+    position: absolute;
+    font-size: 300px !important;
+    font-weight: 400 !important;
+    color: #EEE9E2 !important;
+    bottom: 0%;
+    text-align: end;
+    width: 100%;
+    line-height: 200px !important;
+    margin: 0 !important;
+    right: 15px;
+}
+@keyframes arrowLineRotation {
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes arrowLineRotationRev {
+    to {
+        transform: rotate(-180deg);
+    }
+}
+.section7 {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pretitle {
+    color: #1E1C1A;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    margin-bottom: 42px !important;
+}
+
+.guestwords {
+    color: #1E1C1A !important;
+    font-family: 'Gilda Display',serif !important;
+    font-size: 70px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 90px !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.guestwordsgreen {
+    color: #818B6E;
+    font-family: 'Gilda Display',serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.biglinesvg {
+    margin: 40px auto;
+    width: 100%;
+}
+
+.textwighth {
+    font-weight: 600;
+}
+
+.tab-title-text {
+    line-height: 17.34px !important;
+    letter-spacing: 0.2em !important;
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0 0 0 20px !important;
+}
+
+::marker {
+    font-size: 50%;
+}
+
+.eb-tabs-nav {
+    max-width: 1400px !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+}
+
+.maxwidth {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+    max-width: 1400px !important;
+}
+
+.booknowbox {
+    padding-top: 70px;
+    text-align: center;
+}
+.bokbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.calender_container {
+    background: #FFFFFF;
+    border: solid black 1px;
+    padding: 20px 0;
+}
+
+
+
+

@@ -1,0 +1,467 @@
+﻿.sectionmini {
+    background: #232323;
+    height: 20vh !important;
+}
+
+
+.section4 {
+    background: #232323;
+    height: 780px;
+    overflow: hidden;
+}
+
+.title {
+    cursor: pointer;
+    filter: blur(5px);
+    color: #ffffff;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    transition: filter 0.5s ease;
+    font-family: 'Gilda Display',serif;
+}
+
+    .title:hover {
+        filter: blur(2px);
+    }
+
+    .title.active {
+        filter: blur(0);
+    }
+
+.chosen_titles {
+    position: relative;
+    top: 20%;
+    left: 10vh;
+    padding-left: 31px;
+}
+
+.chosen_title {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.shown_text {
+    position: relative;
+    top: -8%;
+    left: 50%;
+    width: 45%;
+    margin: 0 !important;
+}
+
+.titles_box {
+    display: flex;
+    align-items: flex-start;
+}
+
+.shown {
+    height: 0;
+    transition: height 0.5s ease;
+    overflow: hidden;
+}
+
+    .shown.active {
+        height: 450px;
+    }
+
+.title_in_show, .title_pre {
+    font-family: 'Gilda Display',serif;
+    color: #ffffff;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 25px !important;
+}
+
+.bignr {
+    font-family: 'Gilda Display',serif;
+    color: #818b6e;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.smallnr {
+    font-family: 'Gilda Display',serif;
+    color: #818b6e;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 400;
+    padding-right: 15px;
+}
+
+.titles_box .smallnr {
+    color: #818B6E;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    padding-top: 20px;
+    padding-right: 15px;
+}
+/*
+        .content_in_show{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 35px;
+        }
+        */
+.content_in_show {
+    display: grid;
+    align-items: flex-start;
+    gap: 35px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text_in_show, .text_in_show_sec {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 !important;
+}
+
+.button_in_show {
+    cursor: pointer;
+    border: 1px solid #818B6E;
+    border-radius: 50px;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17.5px;
+    letter-spacing: 1.2px;
+    padding: 10px 20px;
+    background: #818B6E00;
+    transition: background 0.5s ease;
+}
+
+    .button_in_show:hover {
+        background: #818B6E;
+    }
+
+section6 {
+    height: auto;
+}
+
+img.img_food_box {
+    max-width: 100% !important;
+    width: 100%;
+    height: 650px !important;
+    object-fit: cover;
+}
+
+
+
+
+
+.section11 {
+    background: #232323;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sectionfilter {
+    max-width: 1200px !important;
+    min-width: 1200px;
+}
+
+.datefiltertxt {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    margin-bottom: 10px !important;
+}
+
+.filter_date_dot_icon {
+    margin-bottom: 10px !important;
+}
+
+.filter_date_big_txt {
+    color: #FFFFFF;
+    font-family: 'Gilda Display',serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 10px !important;
+}
+
+.booknowbox {
+    max-width: 1200px !important;
+    text-align: center;
+}
+
+.booknowdate {
+    margin-bottom: 140px;
+    margin-top: 140px;
+}
+
+
+
+
+
+
+#container {
+    font-family: Gilda Display;
+    color: #EEE9E2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dates-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    margin-bottom: 20px; /* Add some margin at the bottom */
+}
+
+.date {
+    padding: 10px;
+    margin: 5px;
+    line-height: 1.2;
+    transition: font-size 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    cursor: pointer; /* Add cursor pointer to indicate clickability */
+}
+
+    .date:hover { /* Add hover effect */
+        color: #FFFFFF;
+    }
+
+.current {
+    font-size: 6.25em;
+}
+
+.close {
+    font-size: 5em;
+    color: rgba(238,233,226, 0.7);
+    filter: blur(1px);
+}
+
+.far {
+    font-size: 3.75em;
+    color: rgba(238,233,226, 0.4);
+    filter: blur(1px);
+}
+
+.farther {
+    font-size: 2em;
+    color: rgba(238,233,226, 0.2);
+    filter: blur(2px);
+}
+
+.month-container {
+    font-family: Jost;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 10px;
+    gap: 35px;
+}
+
+.prevMonthName {
+    margin: 40px;
+}
+
+.arrow {
+    width: 2em;
+    height: 2em;
+    display: flex;
+    background: none;
+    cursor: pointer;
+    gap: 35px;
+    justify-content: center;
+   
+}
+
+
+.booknowbox {
+    max-width: 1200px !important;
+    text-align: center;
+}
+
+.calender_container {
+    padding: 20px;
+    border: 1px solid #FBFBFB;
+    border-bottom: none;
+}
+
+.label_container {
+    border-right: solid #FBFBFB 1px;
+    border-bottom: solid #FBFBFB 1px;
+    border-top: solid #FBFBFB 1px;
+    display: flex;
+}
+
+p.label_box {
+    color: #FBFBFB;
+    width: 100%;
+    border-left: #FBFBFB solid 1px;
+    margin: 0 !important;
+    padding: 20px;
+    font-family: Jost;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.dropbox_container {
+    display: flex;
+    border-right: solid #FBFBFB 1px;
+    border-bottom: solid #FBFBFB 1px;
+}
+
+.dropdown_box {
+    width: 100%;
+    border-left: #FBFBFB solid 1px;
+    margin: 0 !important;
+    padding: 20px;
+}
+
+.dropbtn_light {
+    padding: 0;
+    color: #FBFBFB;
+    font-family: Jost;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    background: none;
+    border: none;
+    min-width: 200px;
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+    .dropdown-content::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropbtn {
+    font-family: Jost;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: #FBFBFB;
+    background: none;
+    border: none;
+    min-width: 200px;
+}
+
+    .dropbtn:hover, .dropbtn_light:hover, .dropbtn:focus, .dropbtn_light:focus {
+        background: none;
+        border: none;
+        color: #FBFBFB;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 200px;
+    overflow: auto;
+}
+
+    .dropdown-content p {
+        cursor: pointer;
+        color: black;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+        font-family: Jost;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0.2em;
+        text-align: center;
+        margin: 0 !important;
+    }
+
+        .dropdown-content p:hover {
+            background-color: #f1f1f1;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bookbtn {
+    font-family: Jost;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    background: #818B6E;
+    color: white;
+    width: 100%;
+    margin: 0 !important;
+    border: solid #FBFBFB 1px;
+    border-top: none;
+    border-radius: 0;
+    padding: 20px;
+}
+
+    .bookbtn:hover {
+        font-family: Jost;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0.2em;
+        text-align: center;
+        background: #2e2e2e;
+        color: white;
+        width: 100%;
+        margin: 0 !important;
+        border: solid #FBFBFB 1px;
+        border-top: none;
+        border-radius: 0;
+        padding: 20px;
+    }
+
+.textwitharrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calender_container {
+    color: red;
+}
+
+

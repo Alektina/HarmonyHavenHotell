@@ -1,0 +1,44 @@
+﻿
+
+
+
+<div id="cart-popup" style="display: none; position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #818B6E; color: #fff; border: 1px solid #ccc; padding: 40px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+    <p>Item added to cart</p>
+</div>
+
+<script>function addToCart(productId) {
+        $.ajax({
+            url: '/Carts/AddToCart/' + productId,
+            type: 'POST',
+            success: function () {
+                // Show the popup
+                $('#cart-popup').show();
+                // Hide the popup after a few seconds
+                setTimeout(function () {
+                    $('#cart-popup').hide();
+                }, 2000);
+                // Update the cart icon
+                updateCartIcon();
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        });
+    }
+
+    function updateCartIcon() {
+        $.ajax({
+            url: '/Carts/GetCartItemCount',
+            type: 'GET',
+            success: function (response) {
+                // Update the cart icon with the number of items in the cart
+                $('#cart-item-count').text(response);
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        });
+        $(document).ready(function () {
+            updateCartIcon();
+        });
+    }</script>

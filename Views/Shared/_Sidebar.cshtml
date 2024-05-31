@@ -1,0 +1,32 @@
+﻿
+
+
+<div class="sidebar">
+
+
+    <div class="sidebar-link">
+        <h2>Our products</h2>
+        <ul>
+            <li><a class="a-sidebar" asp-controller="Products" asp-action="Index">All products</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-category">
+        <h2>Category</h2>
+        <ul>
+            @foreach (var category in ViewBag.Categories)
+            {
+                <li><a class="a-sidebar" asp-controller="Products" asp-action="ProductsByCategory" asp-route-categoryId="@category.Id">@category.CategoryName</a></li>
+            }
+        </ul>
+    </div>
+
+    <div class="sidebar-tags">
+        <h2>Tag</h2>
+        <ul>
+            @foreach (var tag in ViewBag.Tags)
+            {
+                <li><a class="a-sidebar" asp-controller="Products" asp-action="ProductsByTag" asp-route-tagId="@tag.Id">@tag.TagName</a></li>
+            }
+        </ul>
+    </div>
+</div>

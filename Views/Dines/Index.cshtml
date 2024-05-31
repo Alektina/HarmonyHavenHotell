@@ -1,0 +1,451 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/dine.css" />
+</head>
+
+
+
+<div class="section sectionmini section3">
+
+</div>
+
+<div class="section section4">
+
+    <div class="chosen_titles">
+        <div class="chosen_title">
+            <div class="titles_box animated slideInLeft delay-100ms slow"><span class="smallnr">01</span><span class="title">BREAKFAST</span></div>
+            <div class="titles_box animated slideInLeft delay-200ms slow"><span class="smallnr">02</span><span class="title active">LUNCH</span></div>
+            <div class="titles_box animated slideInLeft delay-300ms slow"><span class="smallnr">03</span><span class="title">DINNER</span></div>
+        </div>
+    </div>
+
+    <div class="shown_text">
+        <div class="shown">
+            <p class="title_pre animated fadeInUp slow delay-500ms">
+                <span class="bignr">01_</span>
+                <span class="smallnr">03</span>
+                BREAKFAST
+            </p>
+            <div class="content_in_show">
+                <p class="text_in_show animated fadeInUp slow delay-100ms">
+                    Harmony Haven is a unique country hideaway with the authenticity of a home away from home atmosphere. Set in beautifully lush Mediterranean gardens, an oasis ripe with scents of the earth, sea and sun and an ideal setting for the communion of mind, body and spirit. This is Harmony Haven, a holistic wellbeing retreat and boutique lifestyle retreat featuring 15 beautifully designed rooms and suites. <br><br>
+                    The breakfast & dining area by the pool offers healthy, delicious and fresh buffet style cuisine. We procure locally and organically sourced ingredients wherever possible, and the food and ingredients change with the seasons. Different months bring different delights to the table.
+                </p>
+                <p class="text_in_show_sec animated fadeInUp slow delay-200ms">
+                    The yoga shala is a space for peace and quiet contemplation and meditation. Classes are offered both on an individual basis and for groups, as well as international teachers hosting yoga retreats and other holistic wellbeing retreats. <br><br>
+                    Our wellness area includes both a private beauty treatment room and an open air massage area.
+                    The events and meeting facilities can cater for up to approximately.<br><br><br>
+                </p>
+            </div>
+        </div>
+        <div class="shown active">
+            <p class="title_pre animated fadeInUp slow delay-500ms">
+                <span class="bignr">02_</span>
+                <span class="smallnr">03</span>
+                LUNCH
+            </p>
+            <div class="content_in_show">
+                <p class="text_in_show animated fadeInUp slow delay-100ms">Our mission is to offer tasty, colorful and healthy food loaded with nutrients, aromas and full of passion.Harmony Haven’s Table is a vegetarian, plant-based restaurant offering vegan and vegetarian dishes, located in the beautiful town of Santanyi, in the southeast of Mallorca.<br><br>We serve you our all-time favorites and newly created dishes, inspired by the amazing cuisines from all the world with products Mallorca offers us every season.</p>
+                <p class="text_in_show_sec animated fadeInUp slow delay-200ms">
+                    Therefore, we can adapt to most of your food wishes, intolerances and allergies. You can also go check out cleanse plant-based menu to support body and mind with detoxification and weight loss during our special retreats.<br><br>Meaningful exchanges can happen when we come together with an open heart to share a meal at Harmony Haven’s Table.<br><br><br>
+                </p>
+            </div>
+        </div>
+        <div class="shown">
+            <p class="title_pre animated fadeInUp slow delay-500ms">
+                <span class="bignr">03_</span>
+                <span class="smallnr">03</span>
+                DINNER
+            </p>
+            <div class="content_in_show">
+                <p class="text_in_show animated fadeInUp slow delay-100ms">
+                    Harmony Haven is a unique country hideaway with the authenticity of a home away from home atmosphere. Set in beautifully lush Mediterranean gardens, an oasis ripe with scents of the earth, sea and sun and an ideal setting for the communion of mind, body and spirit. This is Harmony Haven, a holistic wellbeing retreat and boutique lifestyle retreat featuring 15 beautifully designed rooms and suites. <br><br>
+                    The breakfast & dining area by the pool offers healthy, delicious and fresh buffet style cuisine. We procure locally and organically sourced ingredients wherever possible, and the food and ingredients change with the seasons. Different months bring different delights to the table.
+                </p>
+                <p class="text_in_show_sec animated fadeInUp slow delay-200ms">
+                    The yoga shala is a space for peace and quiet contemplation and meditation. Classes are offered both on an individual basis and for groups, as well as international teachers hosting yoga retreats and other holistic wellbeing retreats. <br><br>
+                    Our wellness area includes both a private beauty treatment room and an open air massage area.
+                    The events and meeting facilities can cater for up to approximately.<br><br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            const titles = document.querySelectorAll('.title');
+            const shownItems = document.querySelectorAll('.shown');
+            const imgFoodBox = document.querySelector('.img_food_box');
+
+            let activeIndex = -1; 
+
+            titles.forEach((title, index) => {
+                title.addEventListener('click', function () {
+                    titles.forEach(t => t.classList.remove('active'));
+                    shownItems.forEach(s => s.classList.remove('active'));
+
+                    title.classList.add('active');
+                    shownItems[index].classList.add('active');
+
+                    shownItems.forEach((item, i) => {
+                        const paragraphs1 = item.querySelector('.text_in_show');
+                        const paragraphs2 = item.querySelector('.text_in_show_sec');
+                        const title_pre = item.querySelector('.title_pre');
+
+                        if (i === index && item.classList.contains('active')) {
+                            paragraphs1.classList.add('animated', 'fadeInUp', 'slow', 'delay-100ms', 'o-anim-ready');
+                            paragraphs2.classList.add('animated', 'fadeInUp', 'slow', 'delay-200ms', 'o-anim-ready');
+                            title_pre.classList.add('animated', 'fadeInUp', 'slow', 'delay-500ms', 'o-anim-ready');
+
+                            // Add animation classes to the image only if it's a different active item
+                            if (i !== activeIndex) {
+                                imgFoodBox.classList.remove('animated', 'fadeIn', 'slow', 'o-anim-ready');
+                                void imgFoodBox.offsetWidth; // Trigger reflow to reset animation
+                                imgFoodBox.classList.add('animated', 'fadeIn', 'slow', 'o-anim-ready');
+                                activeIndex = i;
+                            }
+                        } else {
+                            paragraphs1.classList.remove('animated', 'fadeInUp', 'slow', 'delay-100ms', 'o-anim-ready');
+                            paragraphs2.classList.remove('animated', 'fadeInUp', 'slow', 'delay-200ms', 'o-anim-ready');
+                            title_pre.classList.remove('animated', 'fadeInUp', 'slow', 'delay-500ms', 'o-anim-ready');
+                        }
+                    });
+
+                    // Update img_food_box src based on active title
+                    switch (title.textContent.trim()) {
+                        case 'BREAKFAST':
+                            imgFoodBox.src = 'https://demo.justvalue.se/cal/wp-content/uploads/2024/03/0L5A6979-1.png';
+                            break;
+                        case 'LUNCH':
+                            imgFoodBox.src = 'https://demo.justvalue.se/cal/wp-content/uploads/2024/03/DSC_9707-1.png';
+                            break;
+                        case 'DINNER':
+                            imgFoodBox.src = 'https://demo.justvalue.se/cal/wp-content/uploads/2024/05/dine.jpg';
+                            break;
+                        default:
+                            imgFoodBox.src = 'https://demo.justvalue.se/cal/wp-content/uploads/2024/05/def.jpg';
+                    }
+                });
+            });
+        });</script>
+   
+</div>
+
+<div class="section section6">
+    
+    <img src='https://demo.justvalue.se/cal/wp-content/uploads/2024/05/def.jpg' alt="" class="img_food_box animated fadeIn slow" />
+    
+</div>
+
+<div class="section section11">
+    <div class="sectionfilter">
+        <div class="datefiltertxt">RESTAURANT</div>
+        <svg class="filter_date_dot_icon" xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+            <circle cx="2" cy="2" r="1.5" stroke="#FFFFFF"></circle>
+        </svg>
+        <p class="filter_date_big_txt">BOOK YOUR TABLE AT OUR HOLISTIC RESTAURANT</p>
+    </div>
+
+
+
+    
+
+    <div class="booknowdate">
+        <div id="container">
+            <div id="dates-container"><div class="date farther">11/3</div><div class="date far">12/3</div><div class="date close">13/3</div><div class="date current">14/3</div><div class="date close">15/3</div><div class="date far">16/3</div><div class="date farther">17/3</div></div>
+            <div class="month-container">
+                <div id="prevMonthName">February</div>
+                <!-- SVG-ikoner för månadspilar -->
+                <svg id="prevMonthArrow" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43" fill="none">
+                    <circle cx="21.5" cy="21.5" r="21" transform="rotate(-180 21.5 21.5)" stroke="white"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.782 22.1643C13.7722 21.7573 14.0941 21.4269 14.5009 21.4261L27.1591 21.403C27.5659 21.4023 27.9036 21.7316 27.9134 22.1385C27.9231 22.5455 27.6012 22.876 27.1944 22.8767L14.5362 22.8998C14.1294 22.9005 13.7917 22.5712 13.782 22.1643Z" fill="white"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.8648 27.5568C19.5935 27.8282 19.1486 27.8234 18.8713 27.5461L13.9787 22.6536C13.7014 22.3762 13.6966 21.9314 13.968 21.66C14.2394 21.3886 14.6842 21.3934 14.9616 21.6707L19.8541 26.5633C20.1314 26.8406 20.1362 27.2855 19.8648 27.5568Z" fill="white"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.968 22.6428C13.6966 22.3714 13.7014 21.9266 13.9787 21.6493L18.8713 16.7567C19.1486 16.4794 19.5935 16.4746 19.8649 16.746C20.1362 17.0174 20.1314 17.4622 19.8541 17.7395L14.9616 22.6321C14.6842 22.9094 14.2394 22.9142 13.968 22.6428Z" fill="white"></path>
+                </svg>
+
+                <!-- SVG-ikoner för månadspilar -->
+                <svg id="nextMonthArrow" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43" fill="none">
+                    <circle cx="21.5" cy="21.5" r="21" stroke="white"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.218 20.8357C29.2278 21.2427 28.9059 21.5731 28.4991 21.5739L15.8409 21.597C15.4341 21.5977 15.0964 21.2684 15.0866 20.8615C15.0769 20.4545 15.3988 20.124 15.8056 20.1233L28.4638 20.1002C28.8706 20.0995 29.2083 20.4288 29.218 20.8357Z" fill="white"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1352 15.4432C23.4065 15.1718 23.8514 15.1766 24.1287 15.4539L29.0213 20.3464C29.2986 20.6238 29.3034 21.0686 29.032 21.34C28.7606 21.6114 28.3158 21.6066 28.0384 21.3293L23.1459 16.4367C22.8686 16.1594 22.8638 15.7145 23.1352 15.4432Z" fill="white"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.032 20.3572C29.3034 20.6286 29.2986 21.0734 29.0213 21.3507L24.1287 26.2433C23.8514 26.5206 23.4065 26.5254 23.1352 26.254C22.8638 25.9826 22.8686 25.5378 23.1459 25.2605L28.0384 20.3679C28.3158 20.0906 28.7606 20.0858 29.032 20.3572Z" fill="white"></path>
+                </svg>
+                <div id="nextMonthName">March</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="booknowbox">
+
+
+
+        
+        <div class="calender_container">
+            <div class="dropdown">
+                <button id="dropbtn" class="dropbtn">LUNCH RESERVATION</button>
+            </div>
+        </div>
+        <div class="label_container">
+            <p class="label_box">DATE</p>
+            <p class="label_box">TIME</p>
+            <p class="label_box">GUEST</p>
+            <p class="label_box">ALLERGIES</p>
+        </div>
+        <div class="dropbox_container">
+            <div class="date_dropbox dropdown_box">
+                <div class="dropdown">
+                    <div class="textwitharrow">
+                        <button class="dropbtn_light" id="dropbtnDate">14 March 2024</button><svg width="5" height="3" viewBox="0 0 5 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 3L0.334936 -4.02366e-08L4.66506 4.39713e-07L2.5 3Z" fill="#EEE9E2"></path>
+                        </svg>
+                    </div>
+                    <div class="dropdown-content">
+
+                    </div>
+                </div>
+            </div>
+            <div class="time_dropbox dropdown_box">
+                <div class="dropdown">
+                    <div class="textwitharrow">
+                        <button class="dropbtn_light">14.30</button><svg width="5" height="3" viewBox="0 0 5 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 3L0.334936 -4.02366e-08L4.66506 4.39713e-07L2.5 3Z" fill="#EEE9E2"></path>
+                        </svg>
+                    </div>
+
+                    <div class="dropdown-content">
+                        <p class="timeSelection">14.30</p>
+                        <p class="timeSelection">15.00</p>
+                        <p class="timeSelection">15.30</p>
+                        <p class="timeSelection">16.00</p>
+                        <p class="timeSelection">16.30</p>
+                    </div>
+                </div>
+            </div>
+            <div class="guest_dropbox dropdown_box">
+                <div class="dropdown">
+                    <div class="textwitharrow">
+                        <button class="dropbtn_light">04</button><svg width="5" height="3" viewBox="0 0 5 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 3L0.334936 -4.02366e-08L4.66506 4.39713e-07L2.5 3Z" fill="#EEE9E2"></path>
+                        </svg>
+                    </div>
+                    <div class="dropdown-content">
+                        <p class="guestSelection">01</p>
+                        <p class="guestSelection">02</p>
+                        <p class="guestSelection">03</p>
+                        <p class="guestSelection">04</p>
+                        <p class="guestSelection">05+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="allergies_dropbox dropdown_box">
+                <div class="dropdown">
+                    <div class="textwitharrow">
+                        <button class="dropbtn_light">NO</button><svg width="5" height="3" viewBox="0 0 5 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 3L0.334936 -4.02366e-08L4.66506 4.39713e-07L2.5 3Z" fill="#EEE9E2"></path>
+                        </svg>
+                    </div>
+                    <div class="dropdown-content">
+                        <p class="allergiesSelection">NO</p>
+                        <p class="allergiesSelection">Peanuts</p>
+                        <p class="allergiesSelection">Tree Nuts</p>
+                        <p class="allergiesSelection">Shellfish</p>
+                        <p class="allergiesSelection">Fish</p>
+                        <p class="allergiesSelection">Milk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="bookbtn" type="button" onclick="alert('Hej!')">BOOK NOW</button>
+
+        <script>// First code block
+            const prevMonthName = document.getElementById("prevMonthName");
+            const nextMonthName = document.getElementById("nextMonthName");
+            const datesContainer = document.getElementById("dates-container");
+            const displayedDates = 7; 
+
+
+            let currentDate = new Date();
+
+
+            function generateDates() {
+                datesContainer.innerHTML = ""; // Clear existing dates
+
+
+                // Determine the month to display
+                const displayMonth = new Date(currentDate);
+                displayMonth.setMonth(displayMonth.getMonth() - 1);
+                const displayMonthName = displayMonth.toLocaleDateString("default", {
+                    month: "long",
+                });
+
+
+                // create conatianer for dates
+                const datesWrapper = document.createElement("div")
+
+
+                for (
+                    let i = Math.floor(displayedDates / 2) * -1;
+                    i <= Math.floor(displayedDates / 2);
+                    i++
+                ) {
+                    const displayDate = new Date(currentDate);
+                    displayDate.setDate(currentDate.getDate() + i);
+
+
+                    createAndAppendDateElement(displayDate, i);
+                }
+
+
+                prevMonthName.textContent = displayMonthName;
+                nextMonthName.textContent = currentDate.toLocaleDateString("default", {
+                    month: "long",
+                });
+            }
+
+
+            function createAndAppendDateElement(date, distance) {
+                const dateElement = document.createElement("div");
+                dateElement.classList.add("date");
+
+
+                const formattedDate = `${date.getDate()}/${date.getMonth() + 1}`;
+                dateElement.textContent = formattedDate;
+
+
+                if (distance === 0) {
+                    dateElement.classList.add("current");
+                } else if (distance === 1 || distance === -1) {
+                    dateElement.classList.add("close");
+                } else if (distance === 2 || distance === -2) {
+                    dateElement.classList.add("far");
+                } else if (distance === 3 || distance === -3) {
+                    dateElement.classList.add("farther");
+                }
+
+
+                // Add event listener for clicking on the date
+                dateElement.addEventListener("click", () => {
+                    currentDate = new Date(date); 
+                    generateDates();
+                    selectDate(date); 
+                    updateSelectedDate(date); 
+                    updateDropdownDates();
+                });
+
+
+                datesContainer.appendChild(dateElement);
+            }
+
+
+            function updateMonthText() {
+                const prevMonth = new Date(currentDate);
+                prevMonth.setMonth(prevMonth.getMonth() - 1);
+                const prevMonthNameText = prevMonth.toLocaleDateString("default", {
+                    month: "long",
+                });
+
+
+                const currentMonthNameText = currentDate.toLocaleDateString("default", {
+                    month: "long",
+                });
+
+
+                const nextMonth = new Date(currentDate);
+                nextMonth.setMonth(nextMonth.getMonth() + 1);
+                const nextMonthNameText = nextMonth.toLocaleDateString("default", {
+                    month: "long",
+                });
+
+
+                // Update month names on the interface
+                prevMonthName.textContent = prevMonthNameText;
+                nextMonthName.textContent = nextMonthNameText;
+            }
+
+
+            function goToPrevMonth() {
+                currentDate.setDate(1); 
+                currentDate.setMonth(currentDate.getMonth() - 1);
+                updateMonthText();
+                generateDates();
+            }
+
+
+            function goToNextMonth() {
+                currentDate.setDate(1);
+                currentDate.setMonth(currentDate.getMonth() + 1);
+                updateMonthText();
+                generateDates();
+            }
+
+
+            // Listen for clicks on the month arrows
+            prevMonthArrow.addEventListener("click", goToPrevMonth);
+            nextMonthArrow.addEventListener("click", goToNextMonth);
+
+
+            generateDates();
+
+
+            // Second code block
+            var dropdown = document.querySelector('.dropdown-content');
+            var dropbtn = document.querySelector('.dropbtn_light');
+            var dropboxupdate = document.getElementById('dropboxupdate')
+
+            // Function to set the selected date as the button text in the desired format
+            function setDateText(date) {
+                var formattedDate = date.getDate() + ' ' + getMonthName(date.getMonth()) + ' ' + date.getFullYear();
+                dropbtn.textContent = formattedDate;
+            }
+
+
+            function getMonthName(monthIndex) {
+                var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                return months[monthIndex];
+            }
+
+            function selectDate(date) {
+                setDateText(date);
+            }
+
+
+            setDateText(new Date());
+
+
+            // Function to update dropdown dates based on selected date
+            function updateDropdownDates() {
+                dropdown.innerHTML = ""; 
+
+
+                var startDate = new Date(currentDate);
+                var endDate = new Date(startDate);
+                endDate.setDate(startDate.getDate() + 7);
+
+
+                while (startDate <= endDate) {
+                    var option = document.createElement('p');
+                    option.textContent = startDate.getDate() + ' ' + getMonthName(startDate.getMonth()) + ' ' + startDate.getFullYear();
+                    option.onclick = function () {
+                        var selectedDate = new Date(this.textContent);
+                        selectDate(selectedDate);
+                        updateSelectedDate(selectedDate); // Update selected date in the third part of the code
+                    };
+                    dropdown.appendChild(option);
+                    startDate.setDate(startDate.getDate() + 1);
+                }
+            }
+
+
+            function updateSelectedDate(date) {
+
+            }</script>
+
+
+
+    </div>
+
+
+
+</div>

@@ -1,0 +1,46 @@
+﻿@model List<Product>
+
+
+@{
+    ViewData["Title"] = "Products by tag";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/product.css" />
+</head>
+
+
+<div class="sectionmini_product">
+
+</div>
+<div class="position-absolute top-0 end-0">
+    @{
+        Html.RenderPartial("/Views/Shared/_Cart.cshtml");
+    }
+    @Html.Partial("_AddToCartPopup")
+
+</div>
+<div class="container">
+    <div class="section_product">
+        @Html.Partial("_Sidebar")
+        <div class="container_product">
+            <h1 class="product_rubrik">PRODUCTS BY TAG</h1>
+            <div class="product_grid" style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px;">
+
+                @foreach (Product Item in Model)
+                {
+                    <div class="product">
+                        <h3>@Html.DisplayFor(modelItem => Item.ProductName)</h3>
+                        <img src="@Item.ImageUrl" alt="@Item.ProductName" style="width: 500px; height: auto;" />
+                        <p>Price: $@Html.DisplayFor(modelItem => Item.ProductPrice)</p>
+
+
+                        <a class="link" asp-action="Details" asp-route-id="@Item.Id">Details</a>
+                        <a class="link active" href="javascript:void(0);" onclick="addToCart(@Item.Id)">Add to cart</a>
+                    </div>
+                }
+            </div>
+
+        </div>
+</div>
+</div>

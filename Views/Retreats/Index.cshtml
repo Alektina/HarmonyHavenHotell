@@ -1,0 +1,249 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/retreat.css" />
+</head>
+
+
+<!-- wp:html -->
+<div class="sectionmini_retreat">
+
+</div>
+<div class="section section4">
+
+    <div class="chosen_titles">
+        <div class="chosen_title">
+            <div class="titles_box animated slideInLeft delay-100ms slow"><span class="smallnr">01</span><span class="title">RETREAT</span></div>
+            <div class="titles_box animated slideInLeft delay-200ms slow"><span class="smallnr">02</span><span class="title active">YOGA</span></div>
+            <div class="titles_box animated slideInLeft delay-300ms slow"><span class="smallnr">03</span><span class="title">MASSAGE</span></div>
+        </div>
+    </div>
+
+    <div class="shown_text">
+        <div class="shown">
+            <p class="title_pre animated fadeInUp delay-500ms slow">
+                <span class="bignr">01_</span>
+                <span class="smallnr">03</span>
+                HOLISTIC WELLBEING
+            </p>
+            <div class="content_in_show">
+                <p class="text_in_show animated fadeInUp delay-100ms slow">Harmony Haven was founded with the purpose of inspiring our guests with a unique and transformative experience. <br><br> Our different retreats include yoga, meditation and mindfulness workshops, seminars and other holistic wellness related events. The retreats include all aspects of wellbeing; physical, mental, emotional, spiritual and social.</p>
+                <p class="text_in_show_sec animated fadeInUp delay-200ms slow ">Most of our retreats are led by renowned international teachers and holistic wellness experts. You can choose a completely personalised wellbeing experience tailored to your individual needs, or you can choose to join one of our upcoming group retreats.</p>
+                <button class="bookbtn" type="button" onclick="window.location.href='https://www.bokadirekt.se/massage/stockholm'">CHECK AVAILABILITY</button>
+
+            </div>
+        </div>
+        <div class="shown active">
+            <p class="title_pre animated fadeInUp delay-500ms">
+                <span class="bignr">02_</span>
+                <span class="smallnr">03</span>
+                DISCOVER HARMONY OF BODY, MIND, AND SPIRIT THROUGH YOGA
+            </p>
+            <div class="content_in_show">
+                <p class="text_in_show animated fadeInUp delay-100ms">
+                    Welcome to our serene yoga sanctuary, where the ancient practice of yoga meets modern wellness. At our spa, we believe in the transformative power of yoga to nurture not just the body, but also the mind and spirit. Join us as we embark on a journey of self-discovery and holistic well-being through the practice of yoga.<br><br>
+                    Step into our tranquil yoga studio and leave the stresses of the outside world behind. With soothing music, soft lighting, and a peaceful atmosphere, our studio provides the perfect environment for you to reconnect with yourself and find inner peace. Whether you're a beginner or an experienced yogi,
+                    our experienced instructors are here to guide you on your journey.
+                </p>
+                <p class="text_in_show_sec animated fadeInUp delay-200ms">
+                    Yoga is more than just a physical practice – it's a path to wellness that encompasses mind, body, and spirit. Through the practice of asanas (poses), pranayama (breath control),
+                    and meditation, yoga offers a multitude of benefits,
+
+                    including increased flexibility, strength, and mental clarity.
+                    Join us for a yoga class and experience the profound effects for yourself.<br><br><br>
+                </p>
+                <button class="bookbtn" type="button" onclick="window.location.href='https://www.bokadirekt.se/massage/stockholm'">CHECK AVAILABILITY</button>
+
+            </div>
+        </div>
+        <div class="shown">
+            <p class="title_pre animated fadeInUp delay-500ms">
+                <span class="bignr">03_</span>
+                <span class="smallnr">03</span>
+                GIVE YOUR BODY AND SOUL THE CARE THEY DESERVE
+            </p>
+            <div class="content_in_show">
+                <p class="text_in_show animated fadeInUp  delay-100ms">
+                    Step into a world of tranquility and wellness at our exclusive massage section. Our skilled staff is dedicated to providing you with an experience of complete relaxation and rejuvenation, where each treatment is tailored to suit your individual needs and preferences.<br /><br />
+                    For an experience beyond the ordinary, why not try one of our specialty treatments? From hot stone massages to Thai yoga therapy and Ayurvedic Abhyanga, our exclusive treatments combine proven techniques with luxurious products to provide you with a completely unique and rejuvenating experience.
+
+                </p>
+                <p class="text_in_show_sec animated fadeInUp  delay-200ms">
+                    Release the stress and treat yourself to the privilege of one of our luxurious massage treatments. From classic massages to deep tissue therapies and advanced aromatherapy treatments, our diverse menu offers something for everyone. Let our experienced therapists guide you to a deep sense of calm and well-being.<br /><br />
+                    At our massage section, it's not just about treating the body – it's also about nurturing the soul. By creating a harmonious environment where you can relax and reconnect with yourself, we strive to provide you with a holistic experience that promotes balance and well-being on all levels.
+
+                </p>
+                <button class="bookbtn" type="button" onclick="window.location.href='https://www.bokadirekt.se/massage/stockholm'">CHECK AVAILABILITY</button>
+
+            </div>
+        </div>
+    </div>
+<div class="gap"></div>
+
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            const titles = document.querySelectorAll('.title');
+            const shownItems = document.querySelectorAll('.shown');
+            const imgFoodBox = document.querySelector('.img_food_box');
+
+            let activeIndex = -1; // To track the index of the currently active item
+
+            titles.forEach((title, index) => {
+                title.addEventListener('click', function () {
+                    titles.forEach(t => t.classList.remove('active'));
+                    shownItems.forEach(s => s.classList.remove('active'));
+
+                    title.classList.add('active');
+                    shownItems[index].classList.add('active');
+
+                    shownItems.forEach((item, i) => {
+                        const paragraphs1 = item.querySelector('.text_in_show');
+                        const paragraphs2 = item.querySelector('.text_in_show_sec');
+                        const title_pre = item.querySelector('.title_pre');
+
+                        if (i === index && item.classList.contains('active')) {
+                            paragraphs1.classList.add('animated', 'fadeInUp', 'delay-100ms', 'o-anim-ready');
+                            paragraphs2.classList.add('animated', 'fadeInUp', 'delay-200ms', 'o-anim-ready');
+                            title_pre.classList.add('animated', 'fadeInUp','delay-500ms', 'o-anim-ready');
+
+                            // Add animation classes to the image only if it's a different active item
+                            if (i !== activeIndex) {
+                                imgFoodBox.classList.remove('animated', 'fadeIn', 'o-anim-ready');
+                                void imgFoodBox.offsetWidth; // Trigger reflow to reset animation
+                                imgFoodBox.classList.add('animated', 'fadeIn',  'o-anim-ready');
+                                activeIndex = i;
+                            }
+                        } else {
+                            paragraphs1.classList.remove('animated', 'fadeInUp',  'delay-100ms', 'o-anim-ready');
+                            paragraphs2.classList.remove('animated', 'fadeInUp',  'delay-200ms', 'o-anim-ready');
+                            title_pre.classList.remove('animated', 'fadeInUp',  'delay-500ms', 'o-anim-ready');
+                        }
+                    });
+
+                });
+            });
+        });</script>
+
+</div>
+
+<div class="section section6">
+   
+    <div class="slide_newr">
+
+        <div class="slide_newr__slide_news">
+            <div class="slide_new s-new--active_new">
+                <div class="slide_new__inner">
+                    <div class="slide_new__content">
+                        <div class="dots_new_place">
+                            <p class="dotnr_new">1</p>
+                            <div class="linesilder_new">
+                                <div class="linesikderfull_new"></div>
+                            </div>
+                            <p class="dotnr_new">3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide_new">
+                <div class="slide_new__inner">
+                    <div class="slide_new__content">
+                        <div class="dots_new_place">
+                            <p class="dotnr_new">2</p>
+                            <div class="linesilder_new">
+                                <div class="linesikderfull_new"></div>
+                            </div>
+                            <p class="dotnr_new">3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide_new s-new--prev">
+                <div class="slide_new__inner">
+                    <div class="slide_new__content">
+                        <div class="dots_new_place">
+                            <p class="dotnr_new">3</p>
+                            <div class="linesilder_new">
+                                <div class="linesikderfull_new"></div>
+                            </div>
+                            <p class="dotnr_new">3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide_newr__control animated fadeInUp">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.782935 8.16429C0.773184 7.75735 1.09507 7.42686 1.5019 7.42611L14.1601 7.40304C14.5669 7.4023 14.9046 7.73159 14.9143 8.13853C14.9241 8.54547 14.6022 8.87596 14.1954 8.8767L1.53721 8.89977C1.13039 8.90052 0.792687 8.57123 0.782935 8.16429Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.86583 13.5568C6.59443 13.8282 6.14961 13.8234 5.87228 13.5461L0.979725 8.65355C0.702399 8.37623 0.69759 7.9314 0.968985 7.66C1.24038 7.38861 1.68521 7.39342 1.96253 7.67075L6.85509 12.5633C7.13241 12.8406 7.13722 13.2855 6.86583 13.5568Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.968985 8.64281C0.697591 8.37142 0.702399 7.92659 0.979725 7.64926L5.87228 2.75671C6.14961 2.47938 6.59443 2.47458 6.86583 2.74597C7.13722 3.01737 7.13241 3.46219 6.85509 3.73952L1.96253 8.63207C1.68521 8.9094 1.24038 8.91421 0.968985 8.64281Z" fill="white" />
+            </svg>
+
+        </div>
+        <div class="slide_newr__control slide_newr__control--right m--right animated fadeInUp">
+            <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2171 5.83571C14.2268 6.24265 13.9049 6.57314 13.4981 6.57388L0.839945 6.59696C0.433121 6.5977 0.0954207 6.26841 0.085669 5.86147C0.0759173 5.45453 0.397808 5.12404 0.804631 5.1233L13.4628 5.10022C13.8696 5.09948 14.2073 5.42877 14.2171 5.83571Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.13417 0.443153C8.40557 0.171758 8.85039 0.176567 9.12772 0.453893L14.0203 5.34645C14.2976 5.62377 14.3024 6.0686 14.031 6.33999C13.7596 6.61139 13.3148 6.60658 13.0375 6.32925L8.14491 1.4367C7.86759 1.15937 7.86278 0.714548 8.13417 0.443153Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.031 5.35719C14.3024 5.62858 14.2976 6.07341 14.0203 6.35073L9.12772 11.2433C8.85039 11.5206 8.40557 11.5254 8.13417 11.254C7.86278 10.9826 7.86759 10.5378 8.14491 10.2605L13.0375 5.36793C13.3148 5.0906 13.7596 5.08579 14.031 5.35719Z" fill="white" />
+            </svg>
+
+        </div>
+    </div>
+    
+    <script>(function() {
+var $slide_news = document.querySelectorAll('.slide_new');
+var $controls = document.querySelectorAll('.slide_newr__control');
+var $linesikderfull_new = document.querySelectorAll('.linesikderfull_new');
+var numOfslide_news = $slide_news.length;
+var slidingAT = 1300;
+var slidingBlocked = false;
+
+[].slice.call($slide_news).forEach(function($el, index) {
+var i = index + 1;
+$el.classList.add('slide_new-' + i);
+$el.dataset.slide_new = i;
+});
+
+[].slice.call($controls).forEach(function($el) {
+$el.addEventListener('click', controlClickHandler);
+});
+
+function controlClickHandler() {
+if (slidingBlocked) return;
+slidingBlocked = true;
+var $control = this;
+var isRight = $control.classList.contains('m--right');
+var $curactive_new = document.querySelector('.slide_new.s-new--active_new');
+var index = +$curactive_new.dataset.slide_new;
+(isRight) ? index++ : index--;
+if (index < 1) index = numOfslide_news;
+if (index > numOfslide_news) index = 1;
+var $newactive_new = document.querySelector('.slide_new-' + index);
+$control.classList.add('a--rotation');
+$curactive_new.classList.remove('s-new--active_new', 's-new--active_new-prev');
+document.querySelector('.slide_new.s-new--prev').classList.remove('s-new--prev');
+$newactive_new.classList.add('s-new--active_new');
+if (!isRight) $newactive_new.classList.add('s-new--active_new-prev');
+var prevIndex = index - 1;
+if (prevIndex < 1) prevIndex = numOfslide_news;
+document.querySelector('.slide_new-' + prevIndex).classList.add('s-new--prev');
+
+// Update linesikderfull_new width based on current slide
+var linesikderfull_new = 67 + 67 * (index - 1);
+$linesikderfull_new.forEach(function($el) {
+$el.style.width = linesikderfull_new + 'px';
+});
+
+setTimeout(function() {
+$control.classList.remove('a--rotation');
+slidingBlocked = false;
+}, slidingAT*0.75);
+};
+}());</script>
+   
+</div>
+
+<div class="section section7">
+  
+    <p class="pretitle">RESERVE YOUR RETREAT</p>
+    
+    <h2 class="guestwords animated fadeInUp slow">NURTURE <span class="guestwordsgreen">BODY,</span><br><span class="guestwordsgreen">MIND</span> AND<span class="guestwordsgreen"> SPIRIT</span></span></h2>
+   
+</div>
+

@@ -1,0 +1,41 @@
+﻿<head>
+    <link rel="stylesheet" href="/css/product.css" />
+</head>
+
+
+
+
+@model HarmonyHaven.Models.Product
+
+<div class="sectionmini_product">
+
+</div>
+<div class="details">
+    <div class="container_product">
+        <div class="details-content">
+            <div class="left-content">
+                <div class="position-absolute top-0 end-0">
+                    @{
+                        @Html.Partial("/Views/Shared/_Cart.cshtml")
+                    }
+                </div>
+                @Html.Partial("_AddToCartPopup")
+
+
+                <h1>@Html.DisplayFor(model => model.ProductName)</h1>
+                <img src="@Model.ImageUrl" alt="@Model.ProductName" style="width: 700px;" />
+            </div>
+            <div class="right-content">
+
+                <span>Product details: </span> @Html.DisplayFor(model => model.ProductDescription)
+                <br />
+                <span>Price: $</span> @Html.DisplayFor(model => model.ProductPrice)
+                <br />
+                <br />
+                <a class="link active" asp-controller="Carts" asp-action="AddToCart" asp-route-id="@Model.Id">Add to cart</a>
+                <br />
+            </div>
+        </div>
+
+    </div>
+</div>
